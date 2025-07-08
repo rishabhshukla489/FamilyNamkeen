@@ -72,9 +72,7 @@
         "slide_J7xPVH",
         "slide_RgkRU4"
       ],
-      "custom_css": [
-        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; background-color: white}"
-      ],
+      "custom_css": [],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -157,6 +155,7 @@
         "featured_collection_dTJtLW",
         "featured_collection_GKirew"
       ],
+      "custom_css": [],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Discover our Range",
