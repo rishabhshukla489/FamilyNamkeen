@@ -73,7 +73,7 @@
         "slide_RgkRU4"
       ],
       "custom_css": [
-        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative;}"
+        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; background-color: white}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
