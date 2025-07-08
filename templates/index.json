@@ -338,6 +338,7 @@
     },
     "contact_form_cAFMFG": {
       "type": "contact-form",
+      "custom_css": [],
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Get in touch today to explore bulk pricing or become a distributor",
