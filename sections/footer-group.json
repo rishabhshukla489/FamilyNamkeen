@@ -23,6 +23,38 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "text_4HyL44": {
+          "type": "text",
+          "settings": {
+            "heading": "Because some flavors aren’t just tasted — they’re remembered.",
+            "subtext": "<p>Bringing you the taste of tradition for over 35 years. Crafted by Bakers Agri Foods Pvt. Ltd., we deliver authentic Indian snacks made with care, quality and love.</p>"
+          }
+        },
+        "image_meg7VT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/f24788d6b6c1dd134b9d053580642e69fdea3d66.png",
+            "image_width": 340,
+            "alignment": "center"
+          }
+        },
+        "text_47j6xc": {
+          "type": "text",
+          "settings": {
+            "heading": "BAKERS AGRI FOODS PVT. LTD",
+            "subtext": "<p>301, City Centre The Mall, Kanpur - 208001 624, Rawatpur, Chaudagra, Fatehpur (UP) - 212665</p><p>info@familysnacks.in</p><p>+917525046504 / +919653039046</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4HyL44",
+        "image_meg7VT",
+        "text_47j6xc"
+      ],
+      "custom_css": [
+        ".footer-block__newsletter {display: none;}"
+      ],
       "settings": {
         "color_scheme": "scheme-9fb2a1b4-1a83-4959-84f9-f17b04a9ac90",
         "newsletter_enable": true,
