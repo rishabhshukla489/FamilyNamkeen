@@ -24,9 +24,9 @@
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "bottom-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "color_scheme": ""
           }
         },
@@ -38,13 +38,13 @@
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
-            "button_label": "Shop now",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "bottom-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
         },
@@ -56,7 +56,7 @@
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
-            "button_label": "Button label",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
@@ -78,7 +78,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
