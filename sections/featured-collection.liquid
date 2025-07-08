@@ -36,6 +36,28 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .featured-collection-heading-flex {
+    flex-wrap: wrap;
+  }
+  .featured-collection-heading-img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .featured-collection-heading-flex {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 0.5em;
+      text-align: left;
+    }
+    .featured-collection-heading-img {
+      max-width: 80vw;
+      max-height: 30vw;
+      margin-bottom: 0.5em;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -67,11 +89,12 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      <div style="display: flex; align-items: center; gap: 1em; flex-direction: {% if section.settings.heading_image_position == 'right' %}row-reverse{% else %}row{% endif %};">
+      <div class="featured-collection-heading-flex" style="display: flex; align-items: center; gap: 1em; flex-direction: {% if section.settings.heading_image_position == 'right' %}row-reverse{% else %}row{% endif %};">
         {%- if section.settings.heading_image != blank -%}
           <img
             src="{{ section.settings.heading_image | image_url: width: 600 }}"
             alt="{{ section.settings.title | escape }}"
+            class="featured-collection-heading-img"
             style="max-height: {{ section.settings.heading_image_size | default: 60 }}px; width: auto;"
           >
         {%- endif -%}
