@@ -17,16 +17,16 @@
           "settings": {
             "image": "shopify://shop_images/09db1095272310938161400e17c8ce27cc45dc71.png",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "Shop now",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
             "color_scheme": ""
           }
         },
@@ -75,13 +75,13 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "ambient",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": ""
       }
     },
     "featured_collection": {
