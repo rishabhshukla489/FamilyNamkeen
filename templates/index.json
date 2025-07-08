@@ -24,7 +24,7 @@
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": ""
@@ -32,6 +32,7 @@
         },
         "slide_J7xPVH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/574632c2b45a87ece5518c090fa317e160c0bdc7.png",
             "image_overlay_opacity": 0,
@@ -50,6 +51,7 @@
         },
         "slide_RgkRU4": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
             "image_overlay_opacity": 0,
