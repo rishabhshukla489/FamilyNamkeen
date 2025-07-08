@@ -307,8 +307,8 @@
     "image_banner_mgeYqY": {
       "type": "image-banner",
       "custom_css": [
-        "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-top:2vw }}",
-        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-top:2vw }}"
+        "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-top: 4vw; }}",
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-top: 4vw; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
