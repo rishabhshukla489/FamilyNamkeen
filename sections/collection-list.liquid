@@ -26,7 +26,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient"
   {% if section.settings.background_image != blank %}
-    style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }}); background-size: cover; background-position: center;"
+    style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }}); background-size: cover; background-position: center; background-attachment: fixed;"
   {% endif %}
 >
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
