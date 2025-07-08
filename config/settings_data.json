@@ -392,5 +392,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".slideshow__controls {display: none !important;}"
+    ]
   }
 }
