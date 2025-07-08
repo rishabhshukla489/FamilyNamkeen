@@ -173,6 +173,7 @@
     },
     "image_banner_Fbhbm9": {
       "type": "image-banner",
+      "custom_css": [],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/WHY_CHOOSE.png",
