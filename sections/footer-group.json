@@ -13,12 +13,13 @@
   "sections": {
     "custom_liquid_gRweFz": {
       "type": "custom-liquid",
+      "custom_css": [],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "",
         "color_scheme": "scheme-95dd33eb-ccde-493e-82bf-0aff0c7eb9de",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "footer": {
@@ -54,7 +55,7 @@
       ],
       "custom_css": [
         ".footer-block__newsletter {display: none;}",
-        ".footer__content-top {padding-top: 2vw; padding-bottom: 0}"
+        ".footer__content-top {padding-top: 2vw; padding-bottom: 0;}"
       ],
       "settings": {
         "color_scheme": "scheme-9fb2a1b4-1a83-4959-84f9-f17b04a9ac90",
