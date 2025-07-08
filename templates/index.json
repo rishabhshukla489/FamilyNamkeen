@@ -163,7 +163,7 @@
       "custom_css": [],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Discover our Range",
+        "title": "<strong>Discover our Range</strong>",
         "heading_size": "h0",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -201,10 +201,10 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "",
-        "products_to_show": 4,
-        "title": "Explore our Products",
-        "heading_size": "h1",
+        "collection": "frontpage",
+        "products_to_show": 10,
+        "title": "<strong>Explore our Products</strong>",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
