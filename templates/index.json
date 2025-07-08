@@ -87,7 +87,10 @@
     },
     "image_banner_njREgh": {
       "type": "image-banner",
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 1vw; }}",
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ABOUT_US.jpg",
@@ -168,7 +171,10 @@
     },
     "image_banner_Fbhbm9": {
       "type": "image-banner",
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-right: 1vw; }}",
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-right: 1vw; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/WHY_CHOOSE.png",
@@ -300,6 +306,10 @@
     },
     "image_banner_mgeYqY": {
       "type": "image-banner",
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 1vw; }}",
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/FAMILY_NAMKEEN.png",
