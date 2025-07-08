@@ -47,7 +47,15 @@
   }
   @media (max-width: 600px) {
     .featured-collection-heading-flex {
-      display: none !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 0.5em;
+      text-align: left;
+    }
+    .featured-collection-heading-img {
+      max-width: 80vw;
+      max-height: 30vw;
+      margin-bottom: 0.5em;
     }
   }
 {%- endstyle -%}
@@ -554,14 +562,6 @@
       ],
       "default": "left"
     }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.featured-collection.presets.name"
-    }
-  ]
-}
-{% endschema %}
   ],
   "presets": [
     {
