@@ -53,7 +53,8 @@
         "text_47j6xc"
       ],
       "custom_css": [
-        ".footer-block__newsletter {display: none;}"
+        ".footer-block__newsletter {display: none;}",
+        ".footer__content-top {padding-top: 2vw; padding-bottom: 0}"
       ],
       "settings": {
         "color_scheme": "scheme-9fb2a1b4-1a83-4959-84f9-f17b04a9ac90",
