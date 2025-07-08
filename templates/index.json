@@ -87,11 +87,7 @@
     },
     "image_banner_njREgh": {
       "type": "image-banner",
-      "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding: 9vw; /* Responsive padding based on viewport width */}",
-        "@media (max-width: 1024px) {.banner__media img {padding: 3vw; }}",
-        "@media (max-width: 600px) {.banner__media img {padding: 2vw; }}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ABOUT_US.jpg",
