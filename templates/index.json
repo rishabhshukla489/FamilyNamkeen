@@ -280,6 +280,17 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "contact_form_cAFMFG": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Get in touch today to explore bulk pricing or become a distributor",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -291,6 +302,7 @@
     "image_banner_PHTCCL",
     "image_banner_fVRTU7",
     "image_banner_d9bB9V",
-    "image_banner_mgeYqY"
+    "image_banner_mgeYqY",
+    "contact_form_cAFMFG"
   ]
 }
