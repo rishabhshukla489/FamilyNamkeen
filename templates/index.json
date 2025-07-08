@@ -15,7 +15,7 @@
         "slide_pJBXtw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/09db1095272310938161400e17c8ce27cc45dc71.png",
+            "image": "shopify://shop_images/BANNER-2.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -32,8 +32,9 @@
         },
         "slide_J7xPVH": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/574632c2b45a87ece5518c090fa317e160c0bdc7.png",
+            "image": "shopify://shop_images/banner_1_2.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h0",
@@ -50,8 +51,9 @@
         },
         "slide_RgkRU4": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
+            "image": "shopify://shop_images/banner_1_3.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -75,7 +77,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -287,7 +289,7 @@
       "settings": {
         "heading": "Get in touch today to explore bulk pricing or become a distributor",
         "heading_size": "h1",
-        "color_scheme": "",
+        "color_scheme": "scheme-25b681f4-ff0d-493d-9587-fc152f78fa2e",
         "padding_top": 36,
         "padding_bottom": 36
       }
