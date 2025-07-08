@@ -198,6 +198,9 @@
     },
     "featured_collection_TxbT3T": {
       "type": "featured-collection",
+      "custom_css": [
+        "@media (max-width: 600px) {.collection__title img {display: none;}}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "frontpage",
