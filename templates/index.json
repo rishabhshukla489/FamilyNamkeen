@@ -237,7 +237,10 @@
       "block_order": [
         "buttons_RjgPCz"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/RAKHI_BANNER.png",
@@ -255,6 +258,10 @@
     },
     "image_banner_PHTCCL": {
       "type": "image-banner",
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/TESTIMONIAL.png",
@@ -272,6 +279,10 @@
     },
     "image_banner_fVRTU7": {
       "type": "image-banner",
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/video.png",
@@ -289,6 +300,10 @@
     },
     "image_banner_d9bB9V": {
       "type": "image-banner",
+      "custom_css": [
+        "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/SOCIAL.png",
