@@ -33,7 +33,7 @@
         "slide_J7xPVH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner_1_2.png",
+            "image": "shopify://shop_images/574632c2b45a87ece5518c090fa317e160c0bdc7.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h0",
@@ -51,7 +51,7 @@
         "slide_RgkRU4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner_1_3.png",
+            "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -73,8 +73,7 @@
         "slide_RgkRU4"
       ],
       "custom_css": [
-        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;}",
-        ".slideshow{width: 80%; height: 100%; object-fit: contain; object-position: center; /* display: block; */}"
+        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -90,6 +89,11 @@
     },
     "image_banner_njREgh": {
       "type": "image-banner",
+      "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding: 9vw; /* Responsive padding based on viewport width */}",
+        "@media (max-width: 1024px) {.banner__media img {padding: 3vw; }}",
+        "@media (max-width: 600px) {.banner__media img {padding: 2vw; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/ABOUT_US.jpg",
