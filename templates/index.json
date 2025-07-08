@@ -160,7 +160,7 @@
       "settings": {
         "title": "Discover our Range",
         "heading_size": "h0",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
