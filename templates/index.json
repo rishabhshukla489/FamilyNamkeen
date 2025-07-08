@@ -74,7 +74,7 @@
       ],
       "custom_css": [
         ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; background-color: white; padding: 0;}",
-        ".slideshow__slide, .slideshow__text,.slideshow__control-wrapper,.slideshow__autoplay,.slideshow__controls,.slideshow__text,.slideshow__text--center,.slideshow__text-wrapper {margin: 0; padding: 0}"
+        ".slideshow__slide,.slideshow__text,.slideshow__control-wrapper,.slideshow__autoplay,.slideshow__controls,.slideshow__text,.slideshow__text--center,.slideshow__text-wrapper {margin: 0; padding: 0;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -91,9 +91,9 @@
     "image_banner_njREgh": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; }}",
-        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
