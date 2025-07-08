@@ -15,7 +15,7 @@
         "slide_pJBXtw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/09db1095272310938161400e17c8ce27cc45dc71.png",
+            "image": "shopify://shop_images/BANNER-3.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -228,22 +228,6 @@
     },
     "image_banner_GUjQx9": {
       "type": "image-banner",
-      "blocks": {
-        "buttons_RjgPCz": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Specials",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "buttons_RjgPCz"
-      ],
       "custom_css": [
         ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-top: 0; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
@@ -251,7 +235,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/RAKHI_BANNER.png",
+        "image": "shopify://shop_images/RAKHI_BANNER-2.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
