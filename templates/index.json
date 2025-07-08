@@ -15,7 +15,7 @@
         "slide_pJBXtw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER-2.png",
+            "image": "shopify://shop_images/09db1095272310938161400e17c8ce27cc45dc71.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -32,7 +32,6 @@
         },
         "slide_J7xPVH": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner_1_2.png",
             "image_overlay_opacity": 0,
@@ -51,7 +50,6 @@
         },
         "slide_RgkRU4": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner_1_3.png",
             "image_overlay_opacity": 0,
@@ -74,14 +72,18 @@
         "slide_J7xPVH",
         "slide_RgkRU4"
       ],
+      "custom_css": [
+        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;}",
+        ".slideshow{width: 80%; height: 100%; object-fit: contain; object-position: center; /* display: block; */}"
+      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": ""
       }
