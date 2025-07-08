@@ -344,7 +344,8 @@
         "heading_size": "h1",
         "color_scheme": "scheme-25b681f4-ff0d-493d-9587-fc152f78fa2e",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "background_image": "shopify://shop_images/FORM-2.png"
       }
     }
   },
