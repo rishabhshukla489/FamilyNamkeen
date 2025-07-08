@@ -35,16 +35,16 @@
           "settings": {
             "image": "shopify://shop_images/574632c2b45a87ece5518c090fa317e160c0bdc7.png",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "",
             "heading_size": "h0",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "Shop now",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
             "color_scheme": "scheme-1"
           }
         },
