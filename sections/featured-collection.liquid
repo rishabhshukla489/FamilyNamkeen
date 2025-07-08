@@ -36,6 +36,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media (max-width: 600px) {
+    .featured-collection-heading-flex {
+      display: none !important;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
