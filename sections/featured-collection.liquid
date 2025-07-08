@@ -67,9 +67,13 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      <div style="display: flex; align-items: center; gap: 1em;">
+      <div style="display: flex; align-items: center; gap: 1em; flex-direction: {% if section.settings.heading_image_position == 'right' %}row-reverse{% else %}row{% endif %};">
         {%- if section.settings.heading_image != blank -%}
-          <img src="{{ section.settings.heading_image | image_url: width: 100 }}" alt="{{ section.settings.title | escape }}" style="max-height: 60px; width: auto;">
+          <img
+            src="{{ section.settings.heading_image | image_url: width: 600 }}"
+            alt="{{ section.settings.title | escape }}"
+            style="max-height: {{ section.settings.heading_image_size | default: 60 }}px; width: auto;"
+          >
         {%- endif -%}
         {%- if section.settings.title != blank -%}
           <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -515,6 +519,25 @@
       "type": "image_picker",
       "id": "heading_image",
       "label": "Heading image"
+    },
+    {
+      "type": "range",
+      "id": "heading_image_size",
+      "label": "Heading image max height (px)",
+      "min": 30,
+      "max": 200,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "select",
+      "id": "heading_image_position",
+      "label": "Heading image position",
+      "options": [
+        { "value": "left", "label": "Left of heading" },
+        { "value": "right", "label": "Right of heading" }
+      ],
+      "default": "left"
     }
   ],
   "presets": [
