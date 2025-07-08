@@ -176,9 +176,9 @@
     "image_banner_Fbhbm9": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-right: 1vw; }}",
-        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-right: 1vw; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-right: 1vw; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -243,9 +243,9 @@
         "buttons_RjgPCz"
       ],
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-top: 0; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
-        "@media (max-width: 600px) {.banner__media img {padding: 0; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-top: 0; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -265,9 +265,9 @@
     "image_banner_PHTCCL": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
-        "@media (max-width: 600px) {.banner__media img {padding: 0; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -287,9 +287,9 @@
     "image_banner_fVRTU7": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
-        "@media (max-width: 600px) {.banner__media img {padding: 0; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -309,9 +309,9 @@
     "image_banner_d9bB9V": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
-        "@media (max-width: 600px) {.banner__media img {padding: 0; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -331,9 +331,9 @@
     "image_banner_mgeYqY": {
       "type": "image-banner",
       "custom_css": [
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-top: 4vw; }}",
-        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-top: 4vw; }}",
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}"
+        "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-top: 4vw; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
