@@ -237,7 +237,7 @@
         "buttons_yGxYzw": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP",
+            "button_label_1": "SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP",
             "button_link_1": "shopify://collections/sweets",
             "button_style_secondary_1": false,
             "button_label_2": "",
