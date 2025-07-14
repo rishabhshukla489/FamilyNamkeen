@@ -199,7 +199,6 @@
     "featured_collection_TxbT3T": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__information {display: none;}",
         "@media (max-width: 600px) {.collection__title img {display: none; }}"
       ],
       "name": "t:sections.featured-collection.presets.name",
