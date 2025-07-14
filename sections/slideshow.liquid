@@ -270,6 +270,21 @@
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.slideshow__slide--clickable').forEach(function(slide) {
+      slide.addEventListener('click', function(e) {
+        // Prevent click if user clicked on a link inside the slide
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        var url = slide.getAttribute('data-slide-link');
+        if (url) {
+          window.location.href = url;
+        }
+      });
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "t:sections.slideshow.name",
