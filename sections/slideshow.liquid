@@ -111,15 +111,21 @@
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
       </style>
+      {%- assign slide_link = block.settings.link -%}
       <div
-        class="slideshow__slide grid__item grid--1-col slider__slide"
+        class="slideshow__slide grid__item grid--1-col slider__slide{% if slide_link %} slideshow__slide--clickable{% endif %}"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
         {{ block.shopify_attributes }}
         role="group"
         aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
+        {% if slide_link %}data-slide-link="{{ slide_link }}"{% endif %}
+        style="{% if slide_link %}cursor:pointer;{% endif %}"
       >
+        {%- if slide_link -%}
+          <a href="{{ slide_link }}" class="slideshow__slide-link" tabindex="-1" aria-hidden="true" style="position:absolute;inset:0;z-index:2;"></a>
+        {%- endif -%}
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
             {%- liquid
@@ -170,6 +176,8 @@
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
+            {#-- Button is hidden/removed --#}
+            {%- comment -%}
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
                 <a
@@ -184,6 +192,7 @@
                 </a>
               </div>
             {%- endif -%}
+            {%- endcomment -%}
           </div>
         </div>
       </div>
