@@ -91,7 +91,7 @@
     "image_banner_njREgh": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 25vw; padding-right: 25vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 10vw; padding-right: 10vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; }}",
         "@media (max-width: 600px) {.banner__media img {padding: 1vw; }}"
       ],
@@ -233,22 +233,6 @@
     },
     "image_banner_GUjQx9": {
       "type": "image-banner",
-      "blocks": {
-        "buttons_99EJdM": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "shopify://collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "buttons_99EJdM"
-      ],
       "custom_css": [
         ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-top: 0; padding-right: 9vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
