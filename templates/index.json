@@ -266,7 +266,7 @@
         "show_text_box": false,
         "color_scheme": "scheme-f526e473-4c94-400c-a1c1-b9c7066f8d27",
         "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "right",
         "show_text_below": false
       }
     },
