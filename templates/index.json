@@ -199,12 +199,12 @@
     "featured_collection_TxbT3T": {
       "type": "featured-collection",
       "custom_css": [
-        "@media (max-width: 600px) {.collection__title img {display: none;}}"
+        "@media (max-width: 600px) {.collection__title img {display: none; }}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "frontpage",
-        "products_to_show": 10,
+        "products_to_show": 8,
         "title": "<strong>Explore our Products</strong>",
         "heading_size": "h0",
         "description": "",
