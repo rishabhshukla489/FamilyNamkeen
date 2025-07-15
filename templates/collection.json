@@ -19,7 +19,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "custom_css": [],
+      "custom_css": [
+        ".card__heading,.price {opacity: 0; pointer-events: auto;}"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
