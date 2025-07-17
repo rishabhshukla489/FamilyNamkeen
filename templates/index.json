@@ -12,6 +12,24 @@
     "slideshow_p9jNM9": {
       "type": "slideshow",
       "blocks": {
+        "slide_RgkRU4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/namkeen",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
+          }
+        },
         "slide_pJBXtw": {
           "type": "slide",
           "settings": {
@@ -47,30 +65,12 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
-        },
-        "slide_RgkRU4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/namkeen",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "bottom-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
+        "slide_RgkRU4",
         "slide_pJBXtw",
-        "slide_J7xPVH",
-        "slide_RgkRU4"
+        "slide_J7xPVH"
       ],
       "custom_css": [
         ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; background-color: white; padding: 0;}",
@@ -79,7 +79,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -177,7 +177,7 @@
     "image_banner_Fbhbm9": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 5vw; padding-right: 0vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-right: 1vw; }}",
         "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-right: 1vw; }}"
       ],
@@ -250,7 +250,7 @@
         "buttons_yGxYzw"
       ],
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-top: 0; padding-right: 9vw;}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-top: 0; padding-right: 0vw;}",
         ".banner__buttons {opacity: 0; pointer-events: auto;}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
         "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
@@ -273,7 +273,7 @@
     "image_banner_PHTCCL": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-right: 0vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
         "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
@@ -295,7 +295,7 @@
     "image_banner_fVRTU7": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-right: 0vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
         "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
@@ -317,7 +317,7 @@
     "image_banner_d9bB9V": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-right: 0vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
         "@media (max-width: 600px) {.banner__media img {padding: 0; }}"
       ],
@@ -339,7 +339,7 @@
     "image_banner_mgeYqY": {
       "type": "image-banner",
       "custom_css": [
-        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 9vw; padding-right: 9vw; /* Responsive padding based on viewport width */}",
+        ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 3vw; padding-right: 3vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 1vw; padding-top: 4vw; }}",
         "@media (max-width: 600px) {.banner__media img {padding-left: 1vw; padding-top: 4vw; }}"
       ],
