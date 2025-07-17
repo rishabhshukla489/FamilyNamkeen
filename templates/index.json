@@ -237,7 +237,7 @@
         "buttons_yGxYzw": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP",
+            "button_label_1": "SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP SPECIALS SHOP SHOP SHOP",
             "button_link_1": "shopify://collections/sweets",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -266,7 +266,7 @@
         "show_text_box": false,
         "color_scheme": "scheme-f526e473-4c94-400c-a1c1-b9c7066f8d27",
         "stack_images_on_mobile": true,
-        "mobile_content_alignment": "right",
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
