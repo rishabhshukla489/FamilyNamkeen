@@ -2,6 +2,9 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 slideshow-component .slideshow.banner {
@@ -18,6 +21,13 @@ slideshow-component .slideshow.banner {
   display: flex;
   flex-direction: column;
   visibility: visible;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 749px) {
@@ -212,38 +222,52 @@ slideshow-component {
 
 /* Reset slideshow banner styles */
 .slideshow.banner {
-  padding: 0 2rem; /* Small padding on container */
+  padding: 0 3rem; /* Padding for left/right spacing */
   background: transparent;
   overflow: hidden;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow.banner {
-    padding: 0 1rem; /* Less padding on mobile */
+    padding: 0 1.5rem; /* Less padding on mobile */
   }
 }
 
 /* Make slides take full width with proper behavior */
 .slideshow__slide {
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  min-height: 100%;
+  box-sizing: border-box;
 }
 
-/* Large image size - almost full width */
+/* Smaller image size - reduce both width and height */
 .slideshow__media {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 100%;
-  max-width: 100%;
+  width: 85%; /* Reduced width */
+  max-width: 85%;
   margin: 0 auto;
   height: auto;
+  max-height: 50vh; /* Limit height */
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__media {
+    width: 90%; /* Slightly larger on mobile */
+    max-width: 90%;
+    max-height: 40vh; /* Smaller height on mobile */
+  }
 }
 
 .slideshow__media img {
@@ -251,21 +275,32 @@ slideshow-component {
   width: 100%;
   height: auto;
   object-fit: cover;
+  max-height: inherit;
 }
 
-/* Ensure only one slide visible at a time */
+/* Ensure only one slide visible at a time - NO OVERFLOW */
 .slideshow.slider.slider--everywhere {
-  overflow: hidden;
+  overflow: hidden !important;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   display: flex;
   flex-wrap: nowrap;
   gap: 0;
+  width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+/* Force slides to stay within container */
+.slideshow.slider.slider--everywhere .slideshow__slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 /* Hide scrollbar completely */
 .slideshow.slider.slider--everywhere::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 .slideshow.slider.slider--everywhere {
@@ -366,4 +401,57 @@ slideshow-component {
     height: 3rem;
     margin: 0 0.25rem;
   }
+}
+
+/* Additional containment fixes */
+.slideshow.banner.grid {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Force proper slide positioning */
+.slideshow.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+/* Prevent any horizontal scrolling */
+.slideshow.slider.slider--everywhere {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Ensure slides are properly contained */
+.slideshow__slide.grid__item {
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+/* Center the slide content properly */
+.slideshow__slide .slideshow__media {
+  display: block;
+  margin: 2rem auto; /* Add top/bottom margin for spacing */
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__slide .slideshow__media {
+    margin: 1rem auto; /* Less margin on mobile */
+  }
+}
+
+/* Adjust text positioning */
+.slideshow__slide .slideshow__text-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
