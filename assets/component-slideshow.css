@@ -207,15 +207,24 @@ slideshow-component {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
+/* Reset slideshow banner styles */
 .slideshow.banner {
-  padding: 0;
+  padding: 0 2rem; /* Small padding on container */
   background: transparent;
-  overflow: hidden; /* Prevent seeing next slides */
+  overflow: hidden;
+  margin: 0;
 }
 
-/* Ensure only one slide is visible at a time */
+@media screen and (max-width: 749px) {
+  .slideshow.banner {
+    padding: 0 1rem; /* Less padding on mobile */
+  }
+}
+
+/* Make slides take full width with proper behavior */
 .slideshow__slide {
   width: 100%;
   flex-shrink: 0;
@@ -223,30 +232,18 @@ slideshow-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0 4rem; /* Equal padding on both sides */
+  padding: 0;
+  min-height: 100%;
 }
 
-@media screen and (max-width: 749px) {
-  .slideshow__slide {
-    padding: 0 2rem; /* Equal padding on mobile */
-  }
-}
-
-/* Make images smaller and maintain aspect ratio */
+/* Large image size - almost full width */
 .slideshow__media {
   border-radius: 1.5rem;
   overflow: hidden;
-  max-width: 70%; /* Reduced size for better spacing */
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   height: auto;
-}
-
-@media screen and (max-width: 749px) {
-  .slideshow__media {
-    max-width: 85%; /* Slightly larger on mobile */
-  }
 }
 
 .slideshow__media img {
@@ -256,7 +253,7 @@ slideshow-component {
   object-fit: cover;
 }
 
-/* Ensure slides don't show partial next/previous slides */
+/* Ensure only one slide visible at a time */
 .slideshow.slider.slider--everywhere {
   overflow: hidden;
   scroll-snap-type: x mandatory;
@@ -276,13 +273,15 @@ slideshow-component {
   scrollbar-width: none;
 }
 
-/* Reduce space between slide and navigation buttons */
+/* Reduce bottom spacing */
 .slideshow__text-wrapper {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .slideshow__slide .banner__content {
-  margin-bottom: 1rem; /* Reduced bottom margin */
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 /* Remove bottom space between image and controls on mobile */
@@ -298,16 +297,6 @@ slideshow-component {
   .slideshow.slider.slider--everywhere {
     margin-bottom: 0;
   }
-}
-
-/* Ensure slider shows only one slide at a time */
-.slideshow.slider {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  overflow-x: hidden; /* Prevent horizontal scrolling visibility */
 }
 
 /* Custom button styling - rounded buttons with green background and white arrows */
@@ -347,14 +336,14 @@ slideshow-component {
   display: none;
 }
 
-/* Adjust controls positioning - closer to slides */
+/* Position controls closer to slides */
 .slideshow__controls {
   background: transparent;
   border: none;
   justify-content: space-between;
-  padding: 0 4rem; /* Match slide padding */
+  padding: 0 3rem;
   position: absolute;
-  bottom: 1rem; /* Reduced from 2rem */
+  bottom: 1rem;
   left: 0;
   right: 0;
   z-index: 2;
@@ -362,14 +351,14 @@ slideshow-component {
 
 .slideshow__controls--top {
   position: static;
-  margin-top: 0.5rem; /* Reduced spacing */
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__controls {
-    padding: 0 2rem; /* Match mobile slide padding */
-    bottom: 0.5rem; /* Even closer on mobile */
+    padding: 0 2rem;
+    bottom: 0.5rem;
   }
   
   .slideshow__controls .slider-button {
