@@ -5,7 +5,6 @@ slideshow-component {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 0 2rem; /* Add horizontal padding for space from edges */
 }
 
 slideshow-component .slideshow.banner {
@@ -14,12 +13,6 @@ slideshow-component .slideshow.banner {
   margin: 0;
   gap: 0;
   overflow-y: hidden;
-}
-
-@media screen and (max-width: 749px) {
-  slideshow-component {
-    padding: 0 1rem; /* Reduced padding on mobile */
-  }
 }
 
 .slideshow__slide {
@@ -298,18 +291,25 @@ slideshow-component {
   max-height: inherit;
 }
 
-/* Ensure only one slide visible at a time - WITH SWIPE FUNCTIONALITY */
+/* Ensure only one slide visible at a time - NO OVERFLOW */
 .slideshow.slider.slider--everywhere {
-  overflow: hidden;
+  overflow: hidden !important;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   display: flex;
   flex-wrap: nowrap;
   gap: 0;
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling for swipe */
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+/* Prevent any horizontal scrolling */
+.slideshow.slider.slider--everywhere {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 /* Force slides to stay within container */
@@ -319,9 +319,9 @@ slideshow-component {
   max-width: 100%;
 }
 
-/* Hide scrollbar but keep functionality */
+/* Hide scrollbar completely */
 .slideshow.slider.slider--everywhere::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 
 .slideshow.slider.slider--everywhere {
@@ -397,7 +397,7 @@ slideshow-component {
   background: transparent;
   border: none;
   justify-content: space-between;
-  padding: 0 3rem; /* Adjusted to match overall padding */
+  padding: 0 3rem; /* Match slide padding */
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -413,7 +413,7 @@ slideshow-component {
 
 @media screen and (max-width: 749px) {
   .slideshow__controls {
-    padding: 0 2rem; /* Adjusted for mobile */
+    padding: 0 2rem; /* Match mobile slide padding */
     bottom: 0.5rem;
   }
   
@@ -449,32 +449,24 @@ slideshow-component {
   box-sizing: border-box;
 }
 
-/* Center the slide content with proper spacing from edges */
+/* Center the slide content properly */
 .slideshow__slide .slideshow__media {
   display: block;
   margin: 1rem auto; /* Reduced margin for better spacing */
-  border-radius: 1rem; /* Rounded corners for images */
-  overflow: hidden; /* Ensure rounded corners work */
-  max-width: calc(100% - 2rem); /* Create space from left and right edges */
-  width: auto;
-  height: auto;
 }
 
 /* Remove extra spacing for adapt_image */
 .banner--adapt_image .slideshow__slide .slideshow__media {
   margin: 0.5rem auto; /* Less margin for adapt_image */
-  max-width: calc(100% - 1rem); /* Slightly less spacing for adapt_image */
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__slide .slideshow__media {
     margin: 0.5rem auto; /* Reduced margin on mobile */
-    max-width: calc(100% - 1rem); /* Less spacing on mobile */
   }
   
   .banner--adapt_image .slideshow__slide .slideshow__media {
     margin: 0.25rem auto; /* Minimal margin for adapt_image on mobile */
-    max-width: calc(100% - 0.5rem); /* Minimal spacing on mobile */
   }
 }
 
@@ -526,27 +518,4 @@ slideshow-component {
   .banner--adapt_image .slideshow__text-wrapper {
     max-width: 95%;
   }
-}
-
-/* Ensure images within slideshow media are properly sized and rounded */
-.slideshow__slide .slideshow__media img {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem; /* Match container border radius */
-  object-fit: cover;
-  display: block;
-}
-
-/* Also apply to any picture elements */
-.slideshow__slide .slideshow__media picture {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.slideshow__slide .slideshow__media picture img {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
 }
