@@ -72,10 +72,7 @@
         "slide_pJBXtw",
         "slide_J7xPVH"
       ],
-      "custom_css": [
-        ".slideshow__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; background-color: white; padding: 0;}",
-        ".slideshow__slide,.slideshow__text,.slideshow__control-wrapper,.slideshow__autoplay,.slideshow__controls,.slideshow__text,.slideshow__text--center,.slideshow__text-wrapper {margin: 0; padding: 0;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
