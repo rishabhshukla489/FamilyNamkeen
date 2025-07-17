@@ -222,18 +222,15 @@ slideshow-component {
 
 /* Reset slideshow banner styles */
 .slideshow.banner {
-  padding: 0 3rem; /* Padding for left/right spacing */
+  padding: 0 1.5rem; /* Reduced padding for better spacing */
   background: transparent;
   overflow: hidden;
   margin: 0;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow.banner {
-    padding: 0 1.5rem; /* Less padding on mobile */
+    padding: 0 1rem; /* Adjusted mobile padding */
   }
 }
 
@@ -255,18 +252,18 @@ slideshow-component {
 .slideshow__media {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 85%; /* Reduced width */
-  max-width: 85%;
+  width: 95%; /* Increased from 85% to reduce cropping */
+  max-width: 95%;
   margin: 0 auto;
   height: auto;
-  max-height: 50vh; /* Limit height */
+  max-height: 65vh; /* Increased from 50vh to show more of the image */
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__media {
-    width: 90%; /* Slightly larger on mobile */
-    max-width: 90%;
-    max-height: 40vh; /* Smaller height on mobile */
+    width: 98%; /* Increased from 90% for mobile */
+    max-width: 98%;
+    max-height: 55vh; /* Increased from 40vh for mobile */
   }
 }
 
@@ -376,7 +373,7 @@ slideshow-component {
   background: transparent;
   border: none;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 2rem; /* Reduced padding to match container */
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -392,7 +389,7 @@ slideshow-component {
 
 @media screen and (max-width: 749px) {
   .slideshow__controls {
-    padding: 0 2rem;
+    padding: 0 1.5rem; /* Adjusted mobile padding */
     bottom: 0.5rem;
   }
   
@@ -439,12 +436,12 @@ slideshow-component {
 /* Center the slide content properly */
 .slideshow__slide .slideshow__media {
   display: block;
-  margin: 2rem auto; /* Add top/bottom margin for spacing */
+  margin: 1.5rem auto; /* Reduced top/bottom margin */
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__slide .slideshow__media {
-    margin: 1rem auto; /* Less margin on mobile */
+    margin: 1rem auto; /* Reduced margin on mobile */
   }
 }
 
