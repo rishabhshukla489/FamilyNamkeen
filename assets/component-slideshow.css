@@ -222,16 +222,10 @@ slideshow-component {
 
 /* Reset slideshow banner styles */
 .slideshow.banner {
-  padding: 0 1.5rem; /* Reduced padding for better spacing */
+  padding: 0; /* Remove all padding - we'll add it to slides instead */
   background: transparent;
   overflow: hidden;
   margin: 0;
-}
-
-@media screen and (max-width: 749px) {
-  .slideshow.banner {
-    padding: 0 1rem; /* Adjusted mobile padding */
-  }
 }
 
 /* Make slides take full width with proper behavior */
@@ -244,26 +238,48 @@ slideshow-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
+  padding: 0 2.5rem; /* Equal padding on each slide */
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__slide {
+    padding: 0 1.5rem; /* Equal padding on mobile */
+  }
 }
 
 /* Smaller image size - reduce both width and height */
 .slideshow__media {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 95%; /* Increased from 85% to reduce cropping */
-  max-width: 95%;
+  width: 100%; /* Full width within slide padding */
+  max-width: 100%;
   margin: 0 auto;
   height: auto;
-  max-height: 65vh; /* Increased from 50vh to show more of the image */
+}
+
+/* Fix adapt_image height issues */
+.banner--adapt_image .slideshow__media {
+  max-height: none; /* Remove height restriction for adapt_image */
+}
+
+.banner--adapt_image .slideshow__slide {
+  min-height: auto; /* Remove min-height for adapt_image */
+}
+
+/* For fixed height banners, add height limits */
+.banner--small .slideshow__media,
+.banner--medium .slideshow__media,
+.banner--large .slideshow__media {
+  max-height: 60vh; /* Limit height for fixed size banners */
+  object-fit: cover;
 }
 
 @media screen and (max-width: 749px) {
-  .slideshow__media {
-    width: 98%; /* Increased from 90% for mobile */
-    max-width: 98%;
-    max-height: 55vh; /* Increased from 40vh for mobile */
+  .banner--small .slideshow__media,
+  .banner--medium .slideshow__media,
+  .banner--large .slideshow__media {
+    max-height: 50vh; /* Smaller height on mobile for fixed sizes */
   }
 }
 
@@ -373,7 +389,7 @@ slideshow-component {
   background: transparent;
   border: none;
   justify-content: space-between;
-  padding: 0 2rem; /* Reduced padding to match container */
+  padding: 0 3rem; /* Match slide padding */
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -389,7 +405,7 @@ slideshow-component {
 
 @media screen and (max-width: 749px) {
   .slideshow__controls {
-    padding: 0 1.5rem; /* Adjusted mobile padding */
+    padding: 0 2rem; /* Match mobile slide padding */
     bottom: 0.5rem;
   }
   
@@ -436,12 +452,21 @@ slideshow-component {
 /* Center the slide content properly */
 .slideshow__slide .slideshow__media {
   display: block;
-  margin: 1.5rem auto; /* Reduced top/bottom margin */
+  margin: 1rem auto; /* Reduced margin for better spacing */
+}
+
+/* Remove extra spacing for adapt_image */
+.banner--adapt_image .slideshow__slide .slideshow__media {
+  margin: 0.5rem auto; /* Less margin for adapt_image */
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__slide .slideshow__media {
-    margin: 1rem auto; /* Reduced margin on mobile */
+    margin: 0.5rem auto; /* Reduced margin on mobile */
+  }
+  
+  .banner--adapt_image .slideshow__slide .slideshow__media {
+    margin: 0.25rem auto; /* Minimal margin for adapt_image on mobile */
   }
 }
 
@@ -451,4 +476,46 @@ slideshow-component {
   z-index: 1;
   margin: 0 auto;
   padding: 1rem 0;
+}
+
+/* Fix adapt_image spacing issues */
+.banner--adapt_image .slideshow__slide {
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+.banner--adapt_image .slideshow__text-wrapper {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Ensure proper slide height for adapt_image */
+.banner--adapt_image .slideshow {
+  align-items: center;
+}
+
+.banner--adapt_image .slideshow__slide {
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Better text positioning for adapt_image */
+.banner--adapt_image .slideshow__text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .banner--adapt_image .slideshow__text-wrapper {
+    max-width: 95%;
+  }
 }
