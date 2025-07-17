@@ -2,6 +2,7 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Prevent any overflow */
 }
 
 slideshow-component .slideshow.banner {
@@ -12,12 +13,26 @@ slideshow-component .slideshow.banner {
   overflow-y: hidden;
 }
 
+.slideshow.banner.grid {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Ensure each slide takes full container width */
+.slideshow__slide.grid__item {
+  min-width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
 .slideshow__slide {
   padding: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   visibility: visible;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 @media screen and (max-width: 749px) {
@@ -210,35 +225,42 @@ slideshow-component {
 }
 
 .slideshow.banner {
-  padding: 0 6rem; /* Increased padding for more white space */
+  padding: 0;
   background: transparent;
-}
-
-@media screen and (max-width: 749px) {
-  .slideshow.banner {
-    padding: 0 3rem; /* More padding on mobile too */
-  }
+  overflow: hidden; /* Prevent seeing next slides */
 }
 
 /* Ensure only one slide is visible at a time */
 .slideshow__slide {
   width: 100%;
   flex-shrink: 0;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem; /* Equal padding on both sides */
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__slide {
+    padding: 0 2rem; /* Equal padding on mobile */
+  }
 }
 
 /* Make images smaller and maintain aspect ratio */
 .slideshow__media {
   border-radius: 1.5rem;
   overflow: hidden;
-  max-width: 80%; /* Make images smaller */
-  margin: 0 auto; /* Center the image */
+  max-width: 70%; /* Reduced size for better spacing */
+  width: 100%;
+  margin: 0 auto;
   height: auto;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__media {
-    max-width: 90%; /* Slightly larger on mobile */
+    max-width: 85%; /* Slightly larger on mobile */
   }
 }
 
@@ -253,6 +275,10 @@ slideshow-component {
 .slideshow.slider.slider--everywhere {
   overflow: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 /* Hide scrollbar completely */
@@ -263,6 +289,15 @@ slideshow-component {
 .slideshow.slider.slider--everywhere {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Reduce space between slide and navigation buttons */
+.slideshow__text-wrapper {
+  margin-bottom: 0;
+}
+
+.slideshow__slide .banner__content {
+  margin-bottom: 1rem; /* Reduced bottom margin */
 }
 
 /* Remove bottom space between image and controls on mobile */
@@ -287,6 +322,7 @@ slideshow-component {
   gap: 0;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling visibility */
 }
 
 /* Custom button styling - rounded buttons with green background and white arrows */
@@ -326,14 +362,14 @@ slideshow-component {
   display: none;
 }
 
-/* Adjust controls positioning */
+/* Adjust controls positioning - closer to slides */
 .slideshow__controls {
   background: transparent;
   border: none;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 4rem; /* Match slide padding */
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem; /* Reduced from 2rem */
   left: 0;
   right: 0;
   z-index: 2;
@@ -341,14 +377,14 @@ slideshow-component {
 
 .slideshow__controls--top {
   position: static;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem; /* Reduced spacing */
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow__controls {
-    padding: 0 2rem;
-    bottom: 1rem;
+    padding: 0 2rem; /* Match mobile slide padding */
+    bottom: 0.5rem; /* Even closer on mobile */
   }
   
   .slideshow__controls .slider-button {
@@ -356,4 +392,23 @@ slideshow-component {
     height: 3rem;
     margin: 0 0.25rem;
   }
+}
+
+/* Additional fixes for slide visibility and spacing */
+.slideshow__slide .slideshow__media {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjust text wrapper positioning */
+.slideshow__slide .slideshow__text-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+/* Ensure banner content doesn't add extra spacing */
+.slideshow__slide .banner__content {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
