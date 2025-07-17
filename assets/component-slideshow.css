@@ -2,7 +2,6 @@ slideshow-component {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent any overflow */
 }
 
 slideshow-component .slideshow.banner {
@@ -13,26 +12,12 @@ slideshow-component .slideshow.banner {
   overflow-y: hidden;
 }
 
-.slideshow.banner.grid {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Ensure each slide takes full container width */
-.slideshow__slide.grid__item {
-  min-width: 100%;
-  max-width: 100%;
-  flex: 0 0 100%;
-}
-
 .slideshow__slide {
   padding: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   visibility: visible;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 @media screen and (max-width: 749px) {
@@ -392,23 +377,4 @@ slideshow-component {
     height: 3rem;
     margin: 0 0.25rem;
   }
-}
-
-/* Additional fixes for slide visibility and spacing */
-.slideshow__slide .slideshow__media {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Adjust text wrapper positioning */
-.slideshow__slide .slideshow__text-wrapper {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 0;
-}
-
-/* Ensure banner content doesn't add extra spacing */
-.slideshow__slide .banner__content {
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
