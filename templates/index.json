@@ -81,6 +81,7 @@
         "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
+        "background_image": "shopify://shop_images/FORM-2.png",
         "show_text_below": true,
         "accessibility_info": ""
       }
