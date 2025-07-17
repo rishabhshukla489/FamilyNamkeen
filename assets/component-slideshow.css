@@ -201,23 +201,68 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 /* Custom slideshow modifications */
+slideshow-component {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .slideshow.banner {
-  padding: 0 2rem; /* Add left and right spacing for images */
+  padding: 0 6rem; /* Increased padding for more white space */
+  background: transparent;
 }
 
 @media screen and (max-width: 749px) {
   .slideshow.banner {
-    padding: 0 1rem; /* Less padding on mobile */
+    padding: 0 3rem; /* More padding on mobile too */
   }
 }
 
+/* Ensure only one slide is visible at a time */
+.slideshow__slide {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+/* Make images smaller and maintain aspect ratio */
 .slideshow__media {
-  border-radius: 1.5rem; /* Add rounded corners to images */
+  border-radius: 1.5rem;
   overflow: hidden;
+  max-width: 80%; /* Make images smaller */
+  margin: 0 auto; /* Center the image */
+  height: auto;
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__media {
+    max-width: 90%; /* Slightly larger on mobile */
+  }
 }
 
 .slideshow__media img {
-  border-radius: 1.5rem; /* Ensure images have rounded corners */
+  border-radius: 1.5rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ensure slides don't show partial next/previous slides */
+.slideshow.slider.slider--everywhere {
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar completely */
+.slideshow.slider.slider--everywhere::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow.slider.slider--everywhere {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Remove bottom space between image and controls on mobile */
@@ -233,6 +278,15 @@ slideshow-component:not(.page-width) .slider-buttons {
   .slideshow.slider.slider--everywhere {
     margin-bottom: 0;
   }
+}
+
+/* Ensure slider shows only one slide at a time */
+.slideshow.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 /* Custom button styling - rounded buttons with green background and white arrows */

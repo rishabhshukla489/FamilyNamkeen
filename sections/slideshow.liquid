@@ -25,7 +25,16 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- if section.settings.background_image != blank -%}
+  {%- style -%}
+    #slideshow-{{ section.id }} {
+      background-image: url({{ section.settings.background_image | image_url: width: 1920 }});
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
 <slideshow-component
+  id="slideshow-{{ section.id }}"
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
@@ -307,6 +316,16 @@
       ],
       "default": "none",
       "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "This image will appear behind all slides"
     },
     {
       "type": "header",
