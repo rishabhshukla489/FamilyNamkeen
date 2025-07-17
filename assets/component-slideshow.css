@@ -199,3 +199,107 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+
+/* Custom slideshow modifications */
+.slideshow.banner {
+  padding: 0 2rem; /* Add left and right spacing for images */
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow.banner {
+    padding: 0 1rem; /* Less padding on mobile */
+  }
+}
+
+.slideshow__media {
+  border-radius: 1.5rem; /* Add rounded corners to images */
+  overflow: hidden;
+}
+
+.slideshow__media img {
+  border-radius: 1.5rem; /* Ensure images have rounded corners */
+}
+
+/* Remove bottom space between image and controls on mobile */
+@media screen and (max-width: 749px) {
+  .banner--mobile-bottom .slideshow__text-wrapper {
+    margin-bottom: 0;
+  }
+  
+  .slideshow.banner.banner--mobile-bottom {
+    margin-bottom: 0;
+  }
+  
+  .slideshow.slider.slider--everywhere {
+    margin-bottom: 0;
+  }
+}
+
+/* Custom button styling - rounded buttons with green background and white arrows */
+.slideshow__controls .slider-button {
+  background: #006338;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slideshow__controls .slider-button:hover {
+  background: #004d2b;
+  transform: scale(1.05);
+}
+
+.slideshow__controls .slider-button svg,
+.slideshow__controls .slider-button path {
+  fill: white !important;
+  color: white !important;
+}
+
+.slideshow__controls .slider-button .svg-wrapper {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Hide counter/dots and autoplay button - only show left/right arrows */
+.slideshow__controls .slider-counter {
+  display: none;
+}
+
+.slideshow__controls .slideshow__autoplay {
+  display: none;
+}
+
+/* Adjust controls positioning */
+.slideshow__controls {
+  background: transparent;
+  border: none;
+  justify-content: space-between;
+  padding: 0 3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slideshow__controls--top {
+  position: static;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__controls {
+    padding: 0 2rem;
+    bottom: 1rem;
+  }
+  
+  .slideshow__controls .slider-button {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.25rem;
+  }
+}
