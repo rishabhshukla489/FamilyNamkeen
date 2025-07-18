@@ -241,6 +241,19 @@ slideshow-component {
   margin: 0;
 }
 
+/* Add bottom padding to slideshow container for full-width screens to prevent button cropping */
+@media screen and (min-width: 1200px) {
+  .slideshow.banner {
+    padding-bottom: 8rem; /* Add bottom padding to prevent button cropping on full-width screens */
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  .slideshow.banner {
+    padding-bottom: 4rem; /* Add moderate bottom padding for medium screens */
+  }
+}
+
 /* Make slides take full width with proper behavior */
 .slideshow__slide {
   width: 100%;
