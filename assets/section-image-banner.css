@@ -2,24 +2,39 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  z-index: 5; /* Ensure banner content is below overlapping logo */
+  z-index: 1; /* Keep banner below overlapping logo */
   isolation: isolate;
 }
 
 /* Accommodate overlapping logo from header */
 .section-header + section .banner {
-  margin-top: 30px;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.section-header + section .banner .banner__content {
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 750px) {
   .section-header + section .banner {
-    margin-top: 40px;
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+  
+  .section-header + section .banner .banner__content {
+    padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 990px) {
   .section-header + section .banner {
-    margin-top: 50px;
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+  
+  .section-header + section .banner .banner__content {
+    padding-top: 40px;
   }
 }
 
