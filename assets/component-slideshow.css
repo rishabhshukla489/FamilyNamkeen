@@ -422,14 +422,14 @@ slideshow-component {
 @media screen and (min-width: 1200px) {
   .slideshow__controls {
     padding: 0 5rem; /* Match larger desktop padding */
-    bottom: 2rem; /* Push buttons down more on large screens for full roundness */
+    bottom: 3rem; /* Even more space for full-width screens */
   }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1199px) {
   .slideshow__controls {
     padding: 0 3rem; /* Match medium desktop padding */
-    bottom: 1.5rem; /* Slightly more space for medium screens */
+    bottom: 2rem; /* More space for medium screens */
   }
 }
 
@@ -496,11 +496,11 @@ slideshow-component {
   }
 }
 
-/* Extra rounding for full-width large screens */
+/* Extra rounding and spacing for full-width large screens */
 @media screen and (min-width: 1200px) {
   .slideshow__slide .slideshow__media {
     border-radius: 1.5rem; /* More rounding on full-width screens */
-    overflow: hidden; /* Ensure proper clipping */
+    margin: 2rem auto 3rem auto; /* More top margin and extra bottom margin to avoid button overlap */
   }
   
   .slideshow__slide .slideshow__media img {
