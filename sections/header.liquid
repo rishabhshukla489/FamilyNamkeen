@@ -74,6 +74,41 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* Improve header spacing between menu and icons */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .header__heading {
+    flex-shrink: 0;
+  }
+
+  .header__inline-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header__icons {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  @media screen and (min-width: 990px) {
+    .header {
+      gap: 3rem;
+    }
+    
+    .header__icons {
+      gap: 2rem;
+    }
+  }
 </style>
 
 {%- style -%}
