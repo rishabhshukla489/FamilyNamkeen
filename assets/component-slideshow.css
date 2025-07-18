@@ -7,6 +7,19 @@ slideshow-component {
   box-sizing: border-box;
 }
 
+/* Add proper spacing for full-width desktop */
+@media screen and (min-width: 1200px) {
+  slideshow-component {
+    padding: 0 4rem; /* Add space from edges on large screens */
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  slideshow-component {
+    padding: 0 2rem; /* Medium spacing for tablet/small desktop */
+  }
+}
+
 slideshow-component .slideshow.banner {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -405,6 +418,19 @@ slideshow-component {
   z-index: 2;
 }
 
+/* Adjust button positioning for different screen sizes */
+@media screen and (min-width: 1200px) {
+  .slideshow__controls {
+    padding: 0 5rem; /* Match larger desktop padding */
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  .slideshow__controls {
+    padding: 0 3rem; /* Match medium desktop padding */
+  }
+}
+
 .slideshow__controls--top {
   position: static;
   margin-top: 0.5rem;
@@ -453,6 +479,19 @@ slideshow-component {
 .slideshow__slide .slideshow__media {
   display: block;
   margin: 1rem auto; /* Reduced margin for better spacing */
+}
+
+/* Add rounded corners and better spacing for desktop */
+@media screen and (min-width: 750px) {
+  .slideshow__slide .slideshow__media {
+    border-radius: 1rem; /* Rounded corners on desktop */
+    overflow: hidden; /* Ensure rounded corners work */
+    margin: 1.5rem auto; /* More spacing on desktop */
+  }
+  
+  .slideshow__slide .slideshow__media img {
+    border-radius: 1rem; /* Ensure images also have rounded corners */
+  }
 }
 
 /* Remove extra spacing for adapt_image */
