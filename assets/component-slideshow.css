@@ -422,12 +422,14 @@ slideshow-component {
 @media screen and (min-width: 1200px) {
   .slideshow__controls {
     padding: 0 5rem; /* Match larger desktop padding */
+    bottom: 2rem; /* Push buttons down more on large screens for full roundness */
   }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1199px) {
   .slideshow__controls {
     padding: 0 3rem; /* Match medium desktop padding */
+    bottom: 1.5rem; /* Slightly more space for medium screens */
   }
 }
 
