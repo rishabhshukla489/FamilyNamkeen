@@ -494,6 +494,17 @@ slideshow-component {
   }
 }
 
+/* Extra rounding for full-width large screens */
+@media screen and (min-width: 1200px) {
+  .slideshow__slide .slideshow__media {
+    border-radius: 1.5rem; /* More rounding on full-width screens */
+  }
+  
+  .slideshow__slide .slideshow__media img {
+    border-radius: 1.5rem; /* Match the container rounding */
+  }
+}
+
 /* Remove extra spacing for adapt_image */
 .banner--adapt_image .slideshow__slide .slideshow__media {
   margin: 0.5rem auto; /* Less margin for adapt_image */
