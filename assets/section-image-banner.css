@@ -2,8 +2,25 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  z-index: auto;
+  z-index: 5; /* Ensure banner content is below overlapping logo */
   isolation: isolate;
+}
+
+/* Accommodate overlapping logo from header */
+.section-header + section .banner {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .section-header + section .banner {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .section-header + section .banner {
+    margin-top: 50px;
+  }
 }
 
 .banner__box {

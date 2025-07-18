@@ -78,24 +78,86 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.3 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.3 | round: 0 }}px 3rem;
   }
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.5 | round: 0 }}px;
+    z-index: 10;
+  }
+
+  /* Make logo larger and overlap into next section */
+  .header__heading-logo-wrapper {
+    position: relative;
+    z-index: 20;
+    transform: scale(1.5);
+    margin-bottom: -25px;
+    transition: transform 0.3s ease, margin-bottom 0.3s ease;
+  }
+
+  /* Ensure the next section (slideshow) has appropriate spacing */
+  .section-header + section {
+    position: relative;
+    z-index: 5;
+    padding-top: 30px;
   }
 
   @media screen and (min-width: 750px) {
     .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
+      margin-bottom: {{ section.settings.margin_bottom | times: 0.5 }}px;
+    }
+    
+    .header__heading-logo-wrapper {
+      transform: scale(1.8);
+      margin-bottom: -35px;
+    }
+    
+    .section-header + section {
+      padding-top: 40px;
     }
   }
 
   @media screen and (min-width: 990px) {
     .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.6 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.6 }}px;
+    }
+    
+    .header__heading-logo-wrapper {
+      transform: scale(2);
+      margin-bottom: -45px;
+    }
+    
+    .section-header + section {
+      padding-top: 50px;
+    }
+  }
+
+  /* Ensure logo stays above slideshow content */
+  .header__heading-logo {
+    position: relative;
+    z-index: 25;
+  }
+
+  /* Reduce header height when sticky */
+  .scrolled-past-header .header__heading-logo-wrapper {
+    transform: scale(1.2);
+    margin-bottom: -15px;
+    transition: transform 0.3s ease, margin-bottom 0.3s ease;
+  }
+
+  @media screen and (min-width: 750px) {
+    .scrolled-past-header .header__heading-logo-wrapper {
+      transform: scale(1.4);
+      margin-bottom: -20px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .scrolled-past-header .header__heading-logo-wrapper {
+      transform: scale(1.5);
+      margin-bottom: -25px;
     }
   }
 {%- endstyle -%}
