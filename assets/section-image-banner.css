@@ -8,33 +8,33 @@
 
 /* Accommodate overlapping logo from header */
 .section-header + section .banner {
-  margin-top: -25px;
-  padding-top: 35px;
+  margin-top: -15px;
+  padding-top: 25px;
 }
 
 .section-header + section .banner .banner__content {
-  padding-top: 35px;
+  padding-top: 25px;
 }
 
 @media screen and (min-width: 750px) {
   .section-header + section .banner {
-    margin-top: -35px;
-    padding-top: 45px;
+    margin-top: -20px;
+    padding-top: 30px;
   }
   
   .section-header + section .banner .banner__content {
-    padding-top: 45px;
+    padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 990px) {
   .section-header + section .banner {
-    margin-top: -45px;
-    padding-top: 55px;
+    margin-top: -25px;
+    padding-top: 35px;
   }
   
   .section-header + section .banner .banner__content {
-    padding-top: 55px;
+    padding-top: 35px;
   }
 }
 
