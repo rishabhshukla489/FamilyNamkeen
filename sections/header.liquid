@@ -188,9 +188,34 @@
       transform: scale(1.2) translateY(12px);
     }
   }
+
+  /* Hide logo when search modal is open */
+  .header--search-open .header__heading-logo-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  // Hide logo when search modal is open
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchModal = document.querySelector('.header__search details');
+    const headerElement = document.querySelector('.header');
+    
+    if (searchModal && headerElement) {
+      searchModal.addEventListener('toggle', function() {
+        if (searchModal.open) {
+          headerElement.classList.add('header--search-open');
+        } else {
+          headerElement.classList.remove('header--search-open');
+        }
+      });
+    }
+  });
+</script>
 
 {%- liquid
   for block in section.blocks
@@ -434,6 +459,7 @@
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
+      this.setupSearchToggle();
     }
 
     setHeaderHeight() {
@@ -510,6 +536,22 @@
     closeSearchModal() {
       this.searchModal = this.searchModal || this.header.querySelector('details-modal');
       this.searchModal.close(false);
+    }
+
+    setupSearchToggle() {
+      const searchModal = this.header.querySelector('.header__search details');
+      const headerElement = this.header.querySelector('.header');
+      
+      if (searchModal && headerElement) {
+        // Listen for the search modal opening
+        searchModal.addEventListener('toggle', () => {
+          if (searchModal.open) {
+            headerElement.classList.add('header--search-open');
+          } else {
+            headerElement.classList.remove('header--search-open');
+          }
+        });
+      }
     }
   }
 
