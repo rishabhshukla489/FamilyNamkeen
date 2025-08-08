@@ -324,7 +324,7 @@
         "full_width": false,
         "video_max_width": 1200,
         "border_radius": 12,
-        "video_fit": "fill",
+        "video_fit": "contain",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
