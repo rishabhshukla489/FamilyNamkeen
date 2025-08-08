@@ -2,12 +2,16 @@
   --ratio-percent: 56.25%;
   position: relative;
   padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .video-container {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .video-section__media:not(.global-media-settings--full-width) {
@@ -49,10 +53,13 @@
   width: 100%;
   height: 100%;
   border-radius: inherit;
+  top: 0;
+  left: 0;
 }
 
 .video-section__media video {
   background: #000000;
+  object-fit: cover;
 }
 
 .video-section__media.media-fit-cover video {
@@ -62,8 +69,55 @@
 .video-section__poster {
   border-radius: inherit;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .video-section__poster img {
   border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Background image styling for video section */
+.video-section {
+  position: relative;
+}
+
+.video-section.has-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* Ensure video is centered within the background */
+.video-section .title-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.video-section .video-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add subtle overlay for better content readability if needed */
+.video-section.has-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  pointer-events: none;
 }

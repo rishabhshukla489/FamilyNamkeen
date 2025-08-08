@@ -18,16 +18,27 @@
     {% if section.settings.background_image != blank %}
       background-image: url({{ section.settings.background_image | image_url: width: 1920 }});
       background-size: cover;
-      background-position: center;
+      background-position: center center;
       background-repeat: no-repeat;
+      background-attachment: scroll;
     {% endif %}
   }
 
   .section-{{ section.id }} .video-section__media {
-    max-width: {{ section.settings.video_max_width }}px;
+    max-width: {{ section.settings.video_max_width | default: 800 }}px;
     margin: 0 auto;
-    border-radius: {{ section.settings.border_radius }}px;
+    border-radius: {{ section.settings.border_radius | default: 12 }}px;
     overflow: hidden;
+  }
+
+  .section-{{ section.id }} .video-section {
+    {% if section.settings.background_image != blank %}
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    {% endif %}
   }
 {%- endstyle -%}
 
@@ -55,7 +66,7 @@
 {%- endcapture -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-background">
-  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding{% if section.settings.background_image != blank %} has-background{% endif %}">
     <div
       {% if section.settings.full_width %}
         class="page-width"
