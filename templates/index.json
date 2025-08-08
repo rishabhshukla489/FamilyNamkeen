@@ -266,6 +266,7 @@
       "block_order": [
         "buttons_yGxYzw"
       ],
+      "disabled": true,
       "custom_css": [
         ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-top: 0; padding-right: 0vw;}",
         ".banner__buttons {opacity: 0; pointer-events: auto;}",
