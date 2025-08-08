@@ -319,11 +319,12 @@
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=g__F_FH76Pw",
         "cover_image": "shopify://shop_images/Group_146.png",
-        "background_image": "shopify://shop_images/Group_147.png",
+        "background_image": "shopify://shop_images/close-up-of-seasoned-chickpeas.jpg",
         "description": "",
         "full_width": false,
         "video_max_width": 1200,
         "border_radius": 12,
+        "video_fit": "fill",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
