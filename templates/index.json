@@ -15,6 +15,24 @@
         "slide_RgkRU4": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/rakhi_banner-3.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/sweets",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
+          }
+        },
+        "slide_DRjYiy": {
+          "type": "slide",
+          "settings": {
             "image": "shopify://shop_images/a328da3760678f1785c4d9f45ccf512d6a5a7607.png",
             "image_overlay_opacity": 0,
             "heading": "",
@@ -69,6 +87,7 @@
       },
       "block_order": [
         "slide_RgkRU4",
+        "slide_DRjYiy",
         "slide_pJBXtw",
         "slide_J7xPVH"
       ],
@@ -290,8 +309,25 @@
         "show_text_below": true
       }
     },
+    "video_pzCgHP": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/WhatsApp Video 2025-08-08 at 1.52.17 PM-2.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_fVRTU7": {
       "type": "image-banner",
+      "disabled": true,
       "custom_css": [
         ".banner__media img {width: 100%; height: 100%; object-fit: contain; object-position: center; display: relative; background-color: white; padding-left: 0vw; padding-right: 0vw; /* Responsive padding based on viewport width */}",
         "@media (max-width: 1024px) {.banner__media img {padding: 0; }}",
@@ -378,6 +414,7 @@
     "featured_collection_TxbT3T",
     "image_banner_GUjQx9",
     "image_banner_PHTCCL",
+    "video_pzCgHP",
     "image_banner_fVRTU7",
     "image_banner_d9bB9V",
     "image_banner_mgeYqY",
