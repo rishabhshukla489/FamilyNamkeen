@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false" class="icon icon-linkedin">
-  <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-</svg>
+<svg class="icon icon-linkedin" viewBox="0 0 20 20"><path fill="currentColor" d="M2.5 18h3V8.3h-3V18zM4 6.9c.9 0 1.5-.7 1.5-1.5S4.9 3.9 4 3.9s-1.5.7-1.5 1.5S3.1 6.9 4 6.9zM12.9 18H16v-5.3c0-1.4 0-3.2-2-3.2s-2.2 1.5-2.2 3.1V18h-3.1V8.3h3v1.4c.4-.8 1.4-1.6 2.8-1.6 3 0 3.6 2 3.6 4.5V18h-.2z"/></svg>
