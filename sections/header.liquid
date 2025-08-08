@@ -215,6 +215,69 @@
     width: 100%;
     height: 100%;
   }
+
+  /* Floating WhatsApp Button */
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .floating-whatsapp__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .floating-whatsapp__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .floating-whatsapp__button .svg-wrapper {
+    width: 32px;
+    height: 32px;
+    color: white;
+  }
+
+  .floating-whatsapp__button svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  /* Hide desktop WhatsApp icon on smaller screens */
+  @media screen and (max-width: 989px) {
+    .header__icon--whatsapp {
+      display: none;
+    }
+  }
+
+  /* Responsive adjustments for floating button */
+  @media screen and (max-width: 750px) {
+    .floating-whatsapp {
+      bottom: 15px;
+      right: 15px;
+    }
+    
+    .floating-whatsapp__button {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .floating-whatsapp__button .svg-wrapper {
+      width: 28px;
+      height: 28px;
+    }
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -422,7 +485,7 @@
 
       <a 
         href="https://wa.me/917525046504" 
-        class="header__icon header__icon--whatsapp link focus-inset" 
+        class="header__icon header__icon--whatsapp link focus-inset small-hide medium-hide" 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -450,6 +513,19 @@
     </div>
   </header>
 </{{ header_tag }}>
+
+<!-- Floating WhatsApp Button -->
+<div class="floating-whatsapp">
+  <a 
+    href="https://wa.me/917525046504" 
+    class="floating-whatsapp__button" 
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <span class="svg-wrapper">{{ 'icon-whatsapp.svg' | inline_asset_content }}</span>
+  </a>
+</div>
 
 {%- if settings.cart_type == 'notification' -%}
   {%- render 'cart-notification',
