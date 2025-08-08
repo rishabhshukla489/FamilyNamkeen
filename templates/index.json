@@ -321,7 +321,7 @@
         "cover_image": "shopify://shop_images/Group_146.png",
         "background_image": "shopify://shop_images/Group_147.png",
         "description": "",
-        "full_width": true,
+        "full_width": false,
         "video_max_width": 1200,
         "border_radius": 12,
         "color_scheme": "",
