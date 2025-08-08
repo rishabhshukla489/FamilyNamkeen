@@ -22,28 +22,58 @@
   height: 52.5rem;
 }
 
-/* Main page content grid styling */
+/* Main page content styling */
 .main-page-content {
+  width: 100%;
+}
+
+/* Text content styling */
+.text-content {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
+}
+
+/* Image grid styling */
+.image-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 @media screen and (min-width: 750px) {
-  .main-page-content {
+  .image-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
   }
 }
 
 @media screen and (min-width: 990px) {
-  .main-page-content {
+  .image-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
   }
 }
 
+/* Image wrapper styling */
+.image-wrapper {
+  display: block;
+}
+
 /* Image styling within the main page content */
+.image-grid img,
 .main-page-content img {
   width: 100%;
   height: auto;
@@ -52,34 +82,57 @@
   padding: 15px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
 }
 
+.image-grid img:hover,
 .main-page-content img:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 99, 56, 0.2);
 }
 
-/* Ensure paragraphs containing images don't interfere with grid */
-.main-page-content p {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Handle text content in grid */
-.main-page-content > *:not(p):not(img) {
-  grid-column: 1 / -1;
+/* Fallback styles for when JavaScript doesn't run */
+.main-page-content:not(:has(.image-grid)) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 750px) {
-  .main-page-content > h1,
-  .main-page-content > h2,
-  .main-page-content > h3,
-  .main-page-content > h4,
-  .main-page-content > h5,
-  .main-page-content > h6 {
-    grid-column: 1 / -1;
-    margin-bottom: 2rem;
-    text-align: center;
+  .main-page-content:not(:has(.image-grid)) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
   }
+}
+
+@media screen and (min-width: 990px) {
+  .main-page-content:not(:has(.image-grid)) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Fallback for paragraphs containing images */
+.main-page-content p:has(img) {
+  margin: 0;
+  display: block;
+}
+
+/* Handle text content that should span full width in fallback */
+.main-page-content > h1,
+.main-page-content > h2,
+.main-page-content > h3,
+.main-page-content > h4,
+.main-page-content > h5,
+.main-page-content > h6 {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Handle text paragraphs without images in fallback */
+.main-page-content > p:not(:has(img)) {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }

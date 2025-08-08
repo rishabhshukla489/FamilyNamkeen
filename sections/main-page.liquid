@@ -19,11 +19,55 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="main-page-content">
+    <div class="main-page-content" id="main-page-content">
       {{ page.content }}
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const contentDiv = document.getElementById('main-page-content');
+  if (!contentDiv) return;
+  
+  // Find all images within the content
+  const images = contentDiv.querySelectorAll('img');
+  
+  if (images.length > 0) {
+    // Create a container for images
+    const imageGrid = document.createElement('div');
+    imageGrid.className = 'image-grid';
+    
+    // Create a container for non-image content
+    const textContent = document.createElement('div');
+    textContent.className = 'text-content';
+    
+    // Move images to the grid container and other content to text container
+    Array.from(contentDiv.children).forEach(child => {
+      if (child.querySelector('img')) {
+        // If this element contains an image, move just the image
+        const img = child.querySelector('img');
+        const imgWrapper = document.createElement('div');
+        imgWrapper.className = 'image-wrapper';
+        imgWrapper.appendChild(img.cloneNode(true));
+        imageGrid.appendChild(imgWrapper);
+      } else if (child.textContent.trim() !== '') {
+        // If it's text content, move to text container
+        textContent.appendChild(child.cloneNode(true));
+      }
+    });
+    
+    // Clear the original content and add organized content
+    contentDiv.innerHTML = '';
+    if (textContent.children.length > 0) {
+      contentDiv.appendChild(textContent);
+    }
+    if (imageGrid.children.length > 0) {
+      contentDiv.appendChild(imageGrid);
+    }
+  }
+});
+</script>
 
 {% schema %}
 {
