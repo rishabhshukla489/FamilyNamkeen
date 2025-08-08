@@ -16,6 +16,25 @@
         "padding_bottom": 28
       }
     },
+    "video_brCKMG": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "<em>Family Namkeen</em>",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/ONX5d6dbzMM?si=ZR-XpMoIWx0j6Olj",
+        "cover_image": "shopify://shop_images/Group_149.png",
+        "description": "",
+        "full_width": false,
+        "video_max_width": 800,
+        "border_radius": 12,
+        "video_fit": "contain",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "video_RMwPrN": {
       "type": "video",
       "name": "t:sections.video.presets.name",
@@ -24,7 +43,26 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/B3NYsHkh5_g?si=b0kVWRZcN9mg4izR",
-        "cover_image": "shopify://shop_images/Rectangle_45.png",
+        "cover_image": "shopify://shop_images/Group_148.png",
+        "description": "",
+        "full_width": false,
+        "video_max_width": 800,
+        "border_radius": 12,
+        "video_fit": "contain",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_LYDCRe": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "<em>Quality Check</em>",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/g__F_FH76Pw?si=R4JtR7v10KrU9AwS",
+        "cover_image": "shopify://shop_images/Group_146.png",
         "description": "",
         "full_width": false,
         "video_max_width": 800,
@@ -38,6 +76,8 @@
   },
   "order": [
     "main",
-    "video_RMwPrN"
+    "video_brCKMG",
+    "video_RMwPrN",
+    "video_LYDCRe"
   ]
 }
