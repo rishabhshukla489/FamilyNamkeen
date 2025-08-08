@@ -19,7 +19,9 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+    <div class="main-page-content">
+      {{ page.content }}
+    </div>
   </div>
 </div>
 

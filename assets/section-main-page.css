@@ -21,3 +21,65 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+/* Main page content grid styling */
+.main-page-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .main-page-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .main-page-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Image styling within the main page content */
+.main-page-content img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #006338;
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-page-content img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 99, 56, 0.2);
+}
+
+/* Ensure paragraphs containing images don't interfere with grid */
+.main-page-content p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Handle text content in grid */
+.main-page-content > *:not(p):not(img) {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 750px) {
+  .main-page-content > h1,
+  .main-page-content > h2,
+  .main-page-content > h3,
+  .main-page-content > h4,
+  .main-page-content > h5,
+  .main-page-content > h6 {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
