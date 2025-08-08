@@ -4,6 +4,8 @@
   padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
   border-radius: inherit;
   overflow: hidden;
+  display: block;
+  width: 100%;
 }
 
 .video-container {
@@ -31,10 +33,22 @@
 .video-section__media.deferred-media {
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
     rgba(var(--color-shadow), var(--media-shadow-opacity));
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .video-section__media.deferred-media:after {
   content: none;
+}
+
+/* Ensure deferred media shows properly */
+.video-section__media.deferred-media:not([loaded]) {
+  background: #f5f5f5;
+}
+
+.video-section__media.deferred-media[loaded] template {
+  display: block !important;
+  z-index: 1;
 }
 
 .video-section__poster.deferred-media__poster:focus {
@@ -60,6 +74,13 @@
 .video-section__media video {
   background: #000000;
   object-fit: cover;
+  z-index: 2;
+}
+
+/* Specific styles for Shopify video tag */
+.video-section__media video[data-shopify] {
+  display: block !important;
+  visibility: visible !important;
 }
 
 .video-section__media.media-fit-cover video {
@@ -70,6 +91,12 @@
   border-radius: inherit;
   overflow: hidden;
   cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .video-section__poster img {
@@ -77,11 +104,29 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+/* Ensure the play button is visible */
+.deferred-media__poster-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Background image styling for video section */
 .video-section {
   position: relative;
+  min-height: 300px; /* Ensure minimum height */
 }
 
 .video-section.has-background {
@@ -94,6 +139,12 @@
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+/* Debug: Temporary border to see video container */
+.video-container {
+  border: 2px solid red; /* Remove this after testing */
+  min-height: 200px;
 }
 
 /* Ensure video is centered within the background */
