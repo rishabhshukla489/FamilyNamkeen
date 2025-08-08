@@ -37,7 +37,7 @@
 .main-page-content img {
   width: 100%;
   height: 300px; /* Fixed height for uniform appearance */
-  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  object-fit: contain; /* Show entire image without cropping */
   object-position: center; /* Center the image within the container */
   border: 3px solid #006338;
   border-radius: 12px;
@@ -46,6 +46,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   margin-bottom: 2rem;
+  background-color: #ffffff; /* Add white background for images with transparency */
 }
 
 .main-page-content img:hover {
