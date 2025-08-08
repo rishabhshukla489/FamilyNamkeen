@@ -4,6 +4,17 @@
   padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-section__media:not(.global-media-settings--full-width) {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
 .scroll-trigger:where(.gradient.video-section__media) {
   background: transparent;
@@ -37,6 +48,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: inherit;
 }
 
 .video-section__media video {
@@ -45,4 +57,13 @@
 
 .video-section__media.media-fit-cover video {
   object-fit: cover;
+}
+
+.video-section__poster {
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.video-section__poster img {
+  border-radius: inherit;
 }
