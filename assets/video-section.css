@@ -53,6 +53,12 @@
     rgba(var(--color-shadow), var(--media-shadow-opacity));
   border-radius: inherit;
   overflow: hidden;
+  background: transparent;
+}
+
+/* Remove box shadow for better integration with background images */
+.video-section.has-background .video-section__media.deferred-media {
+  box-shadow: none;
 }
 
 .video-section__media.deferred-media:after {
@@ -61,7 +67,11 @@
 
 /* Ensure deferred media shows properly */
 .video-section__media.deferred-media:not([loaded]) {
-  background: #f5f5f5;
+  background: transparent;
+}
+
+.video-section__media.deferred-media[loaded] {
+  background: transparent;
 }
 
 .video-section__media.deferred-media[loaded] template {
@@ -74,8 +84,17 @@
 }
 
 .video-section__media iframe {
-  background-color: rgba(var(--color-foreground), 0.03);
+  background-color: transparent;
   border: 0;
+  border-radius: inherit;
+}
+
+/* Specific styling for YouTube and Vimeo iframes */
+.video-section__media iframe.js-youtube,
+.video-section__media iframe.js-vimeo {
+  background-color: transparent;
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .video-section__poster,
@@ -87,6 +106,14 @@
   border-radius: inherit;
   top: 0;
   left: 0;
+  background: transparent;
+}
+
+/* Ensure YouTube iframe gets rounded corners */
+.video-section__media iframe.js-youtube {
+  border-radius: inherit !important;
+  overflow: hidden;
+  background: transparent !important;
 }
 
 .video-section__media video {
@@ -139,6 +166,24 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  background: transparent;
+}
+
+/* Apply video sizing to poster images as well */
+.video-section__media.video-contain .video-section__poster img {
+  object-fit: contain;
+}
+
+.video-section__media.video-cover .video-section__poster img {
+  object-fit: cover;
+}
+
+.video-section__media.video-fill .video-section__poster img {
+  object-fit: fill;
+}
+
+.video-section__media.video-scale-down .video-section__poster img {
+  object-fit: scale-down;
 }
 
 /* Ensure the play button is visible */
