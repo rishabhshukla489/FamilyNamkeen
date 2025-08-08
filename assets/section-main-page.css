@@ -36,8 +36,9 @@
 /* All images get the border and styling */
 .main-page-content img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 300px; /* Fixed height for uniform appearance */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  object-position: center; /* Center the image within the container */
   border: 3px solid #006338;
   border-radius: 12px;
   padding: 15px;
@@ -63,9 +64,10 @@
   margin-bottom: 2rem;
 }
 
-/* Mobile: Keep images stacked */
+/* Mobile: Keep images stacked with smaller height */
 @media screen and (max-width: 749px) {
   .main-page-content img {
+    height: 250px; /* Smaller height for mobile */
     margin-bottom: 2rem;
   }
 }
@@ -80,6 +82,7 @@
   }
   
   .main-page-content img {
+    height: 280px; /* Medium height for tablet */
     margin-bottom: 0;
   }
   
@@ -107,6 +110,10 @@
   .main-page-content {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+  }
+  
+  .main-page-content img {
+    height: 320px; /* Larger height for desktop */
   }
 }
 
