@@ -1,11 +1,29 @@
 .video-section__media {
   --ratio-percent: 56.25%;
   position: relative;
-  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
   border-radius: inherit;
   overflow: hidden;
   display: block;
   width: 100%;
+}
+
+/* Flexible height based on video sizing option */
+.video-section__media.video-contain,
+.video-section__media.video-scale-down {
+  padding-bottom: var(--ratio-percent);
+  height: auto;
+}
+
+.video-section__media.video-cover,
+.video-section__media.video-fill {
+  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+}
+
+/* Auto height option */
+.video-section__media.video-auto-height {
+  padding-bottom: 0;
+  height: auto;
+  min-height: 300px;
 }
 
 .video-container {
@@ -73,8 +91,24 @@
 
 .video-section__media video {
   background: #000000;
-  object-fit: cover;
   z-index: 2;
+}
+
+/* Video object-fit options */
+.video-section__media.video-contain video {
+  object-fit: contain;
+}
+
+.video-section__media.video-cover video {
+  object-fit: cover;
+}
+
+.video-section__media.video-fill video {
+  object-fit: fill;
+}
+
+.video-section__media.video-scale-down video {
+  object-fit: scale-down;
 }
 
 /* Specific styles for Shopify video tag */
@@ -139,12 +173,6 @@
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-}
-
-/* Debug: Temporary border to see video container */
-.video-container {
-  border: 2px solid red; /* Remove this after testing */
-  min-height: 200px;
 }
 
 /* Ensure video is centered within the background */

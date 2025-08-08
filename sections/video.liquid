@@ -80,7 +80,7 @@
     </div>
     <div class="video-container">
       <deferred-media
-        class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} video-{{ section.settings.video_fit | default: 'contain' }}"
         data-media-id="{{ video_id }}"
         {% if poster != null %}
           style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
@@ -268,6 +268,31 @@
       "unit": "px",
       "label": "Border radius",
       "default": 12
+    },
+    {
+      "type": "select",
+      "id": "video_fit",
+      "label": "Video sizing",
+      "options": [
+        {
+          "value": "contain",
+          "label": "Fit (no cropping)"
+        },
+        {
+          "value": "cover",
+          "label": "Fill (may crop)"
+        },
+        {
+          "value": "fill",
+          "label": "Stretch to fit"
+        },
+        {
+          "value": "scale-down",
+          "label": "Scale down"
+        }
+      ],
+      "default": "contain",
+      "info": "Choose how the video should fit within its container"
     },
     {
       "type": "color_scheme",
