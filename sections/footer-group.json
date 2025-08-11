@@ -11,6 +11,16 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_knWKrM": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_gRweFz": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -74,6 +84,7 @@
     }
   },
   "order": [
+    "custom_liquid_knWKrM",
     "custom_liquid_gRweFz",
     "footer"
   ]
