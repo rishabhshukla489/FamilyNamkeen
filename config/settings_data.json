@@ -451,7 +451,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".header__active-menu-item {color: #006338;}"
+      ".header__active-menu-item {color: #006338;}",
+      ".shopify-policy__container {padding-bottom: 5em; padding-top: 5em;}"
     ]
   }
 }
