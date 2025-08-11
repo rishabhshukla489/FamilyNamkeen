@@ -32,20 +32,9 @@
         "padding_top": 4,
         "padding_bottom": 4
       }
-    },
-    "custom_liquid_3fBakj": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "header",
-    "custom_liquid_3fBakj"
+    "header"
   ]
 }
