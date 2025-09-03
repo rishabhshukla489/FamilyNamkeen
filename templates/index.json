@@ -310,6 +310,23 @@
         "show_text_below": true
       }
     },
+    "image_banner_6arbXr": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Anuga_Select.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "video_pzCgHP": {
       "type": "video",
       "name": "t:sections.video.presets.name",
@@ -419,6 +436,7 @@
     "featured_collection_TxbT3T",
     "image_banner_GUjQx9",
     "image_banner_PHTCCL",
+    "image_banner_6arbXr",
     "video_pzCgHP",
     "image_banner_fVRTU7",
     "image_banner_d9bB9V",
