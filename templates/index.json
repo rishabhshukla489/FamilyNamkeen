@@ -331,6 +331,7 @@
     },
     "image_banner_6arbXr": {
       "type": "image-banner",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Anuga_Select.png",
