@@ -15,6 +15,24 @@
         "slide_RgkRU4": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-09-06_at_11.00.10_2aa297ca.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/sweets",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
+          }
+        },
+        "slide_TGmH6D": {
+          "type": "slide",
+          "settings": {
             "image": "shopify://shop_images/rakhi_banner-3.png",
             "image_overlay_opacity": 0,
             "heading": "",
@@ -87,6 +105,7 @@
       },
       "block_order": [
         "slide_RgkRU4",
+        "slide_TGmH6D",
         "slide_DRjYiy",
         "slide_pJBXtw",
         "slide_J7xPVH"
