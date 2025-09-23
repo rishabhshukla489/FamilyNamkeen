@@ -46,9 +46,11 @@
           {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
         </p>
       {%- endif -%}
+
+      {% render 'onhow-min-order' %}
     </div>
     
-{% render 'onhow-min-order' %}
+
 
     <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
