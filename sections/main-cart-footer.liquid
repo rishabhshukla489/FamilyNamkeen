@@ -104,18 +104,19 @@
                 </small>
               </div>
             {%- else -%}
-              {% if cart.total_price < 50000 %}
-  <p style="color:red; font-weight:bold; margin:10px 0;">
-    Minimum order value is ₹500. Please add more products.
-  </p>
-  <style>
-    .cart__checkout-button {
-      pointer-events: none;
-      opacity: 0.5;
-    }
-  </style>
-{% endif %}
+              
               <div class="cart__ctas" {{ block.shopify_attributes }}>
+                {% if cart.total_price < 50000 %}
+                    <p style="color:red; font-weight:bold; margin:10px 0;">
+                      Minimum order value is ₹500. Please add more products.
+                    </p>
+                    <style>
+                      .cart__checkout-button {
+                        pointer-events: none;
+                        opacity: 0.5;
+                      }
+                    </style>
+                  {% endif %}
                 <button
                   type="submit"
                   id="checkout"
