@@ -372,5 +372,49 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    {% if template == 'cart' %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function checkCartValue() {
+    let checkoutBtn = document.querySelector("[name='checkout'], .cart__checkout-button");
+    if (!checkoutBtn) return;
+
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(cart => {
+        if (cart.total_price < 50000) { // Shopify stores in paise
+          checkoutBtn.disabled = true;
+          checkoutBtn.style.opacity = "0.5";
+          checkoutBtn.style.cursor = "not-allowed";
+
+          if (!document.querySelector("#minCartMsg")) {
+            let msg = document.createElement("p");
+            msg.id = "minCartMsg";
+            msg.style.color = "red";
+            msg.innerText = "Minimum order value is ₹500 to proceed to checkout.";
+            checkoutBtn.parentNode.insertBefore(msg, checkoutBtn.nextSibling);
+          }
+        } else {
+          checkoutBtn.disabled = false;
+          checkoutBtn.style.opacity = "1";
+          checkoutBtn.style.cursor = "pointer";
+          let msg = document.querySelector("#minCartMsg");
+          if (msg) msg.remove();
+        }
+      });
+  }
+
+  checkCartValue();
+
+  document.addEventListener("change", function(e) {
+    if (e.target.closest("input[name='updates[]']")) {
+      setTimeout(checkCartValue, 500);
+    }
+  });
+});
+</script>
+{% endif %}
+
   </body>
+  
 </html>
