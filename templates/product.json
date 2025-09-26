@@ -54,13 +54,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "quantity_limit_quantity_limit_dGpm8Y": {
-          "type": "shopify://apps/quantity-limit/blocks/quantity-limit/857ca0cd-9759-45e8-bde2-387ec9d780ec",
-          "settings": {
-            "default_message": "{product}: Maximum allowed quantity is {limit} (current: {current})",
-            "error_color": "#dc3545"
-          }
         }
       },
       "block_order": [
@@ -71,8 +64,10 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "quantity_limit_quantity_limit_dGpm8Y"
+        "share"
+      ],
+      "custom_css": [
+        ".shopify-payment-button__button {opacity: 1 !important; cursor: pointer !important; background-color: #006338!important; color: #fff !important; pointer-events: auto !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -113,18 +108,6 @@
     },
     "1758620771d6279bfc": {
       "type": "apps",
-      "blocks": {
-        "quantity_limit_quantity_limit_MANRbN": {
-          "type": "shopify://apps/quantity-limit/blocks/quantity-limit/857ca0cd-9759-45e8-bde2-387ec9d780ec",
-          "settings": {
-            "default_message": "{product}: Maximum allowed quantity is {limit} (current: {current})",
-            "error_color": "#dc3545"
-          }
-        }
-      },
-      "block_order": [
-        "quantity_limit_quantity_limit_MANRbN"
-      ],
       "settings": {
         "include_margins": true
       }
