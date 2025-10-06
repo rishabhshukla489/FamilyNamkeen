@@ -47,10 +47,54 @@
         "padding_top": 68,
         "padding_bottom": 52
       }
+    },
+    "rich_text_Hj8eKe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yTKHBa": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Growing Market of Namkeen in India</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ec9edK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Indian snack industry has witnessed tremendous growth over the last decade, and Namkeen holds a major share in it. With the increasing demand for quick bites, ready-to-eat products, and regional flavors, the role of Namkeen Wholesalers & Distributors has become more vital than ever.</p><p>According to market insights, the Indian Namkeen industry is expected to grow at a CAGR of over 10% in the coming years. Consumers today look for taste, hygiene, variety, and brand trust, and companies like Family Namkeen have set a benchmark in all these areas. Wholesalers and distributors are the essential link connecting traditional taste-makers with millions of snack lovers across cities and rural markets alike.</p>"
+          }
+        },
+        "button_RmETJH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yTKHBa",
+        "text_Ec9edK",
+        "button_RmETJH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_4wBXPh"
+    "rich_text_4wBXPh",
+    "rich_text_Hj8eKe"
   ]
 }
