@@ -422,6 +422,37 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_3b7BBF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mQgVgG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Leadership with Vision",
+            "heading_size": "h1"
+          }
+        },
+        "text_erqUm4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The foundation of Family Namkeen was laid by <strong>Mr. S.R. Agarwal</strong>, a visionary entrepreneur who dreamt of creating a household name in the Indian snacking industry. His passion for food, combined with his unwavering focus on quality, helped the brand grow from a small local setup to a <strong>leading manufacturer with a pan-India presence</strong>.</p><p>Under his guidance, Bakers Agri Foods Pvt. Ltd. continues to innovate while staying rooted in tradition. Every product we make carries a part of his vision — to spread joy through taste.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mQgVgG",
+        "text_erqUm4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -435,6 +466,7 @@
     "image_with_text_iUf9Y8",
     "image_with_text_8EbN3i",
     "image_with_text_PM9mFQ",
-    "rich_text_3nzdQ4"
+    "rich_text_3nzdQ4",
+    "rich_text_3b7BBF"
   ]
 }
