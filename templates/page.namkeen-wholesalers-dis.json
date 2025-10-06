@@ -11,13 +11,46 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 96,
         "padding_bottom": 28
       }
+    },
+    "rich_text_4wBXPh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ykeTAa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Namkeen Wholesalers & Distributors: Delivering India’s Favorite Snacks with Taste, Trust, and Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_LpzQBQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>India’s snack culture is as diverse as its people, and one name that binds all corners of the country together is Namkeen. From the spicy sev of Indore to the crispy bhujia of Rajasthan and the tangy mixture of Uttar Pradesh, Namkeen is not just a snack — it’s an emotion, a daily companion to tea-time and laughter. At the heart of this flavorful journey stand the Namkeen Wholesalers & Distributors, the unsung heroes who bring these tasty bites to every neighborhood, store shelf, and household.</p><p>Among the pioneers in this flavorful industry, Family Namkeen, crafted by Bakers Agri Foods Pvt. Ltd. under the leadership of Mr. S.R. Agarwal, has been redefining taste and trust since 1989. With over three decades of experience, the brand has become a symbol of quality, freshness, and authentic Indian snacking.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ykeTAa",
+        "text_LpzQBQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_4wBXPh"
   ]
 }
