@@ -453,6 +453,68 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_MgqBFC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AHtyew": {
+          "type": "heading",
+          "settings": {
+            "heading": "Serving Kanpur and Beyond",
+            "heading_size": "h1"
+          }
+        },
+        "text_LhdqaA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While Kanpur remains our home, our flavors travel far and wide. Over the years, Family Namkeen has expanded its presence across <strong>Uttar Pradesh and neighboring states</strong>, making us a <strong>regional favorite and a growing national brand</strong>.</p><p>Whether it’s a local kirana store, a supermarket, or an online platform — our products are easily accessible, ensuring that no one misses out on the authentic taste of Kanpur.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AHtyew",
+        "text_LhdqaA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_GcztTA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ghWYxe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wholesale & Distribution Opportunities",
+            "heading_size": "h1"
+          }
+        },
+        "text_VTQEwW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you’re a retailer, distributor, or business owner looking to partner with a <strong>reliable Namkeen manufacturer in Kanpur</strong>, Family Namkeen offers lucrative business opportunities.</p><ul><li>Consistent supply chain<br/></li><li>Attractive margins<br/></li><li>Strong brand recall<br/></li><li>Quality assurance<br/></li></ul><p>Join hands with us to bring authentic Indian snacks to more homes and hearts.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ghWYxe",
+        "text_VTQEwW"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -467,6 +529,8 @@
     "image_with_text_8EbN3i",
     "image_with_text_PM9mFQ",
     "rich_text_3nzdQ4",
-    "rich_text_3b7BBF"
+    "rich_text_3b7BBF",
+    "rich_text_MgqBFC",
+    "rich_text_GcztTA"
   ]
 }
