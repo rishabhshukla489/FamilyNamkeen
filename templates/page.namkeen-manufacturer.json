@@ -15,9 +15,53 @@
         "padding_top": 96,
         "padding_bottom": 28
       }
+    },
+    "rich_text_VbjFDB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_H4UXia": {
+          "type": "heading",
+          "settings": {
+            "heading": "Namkeen Manufacturer in Kanpur – Family Namkeen: A Legacy of Taste, Trust & Tradition",
+            "heading_size": "h1"
+          }
+        },
+        "text_rKrLx7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to irresistible taste, authentic recipes, and unmatched quality, <em>Family Namkeen</em> stands tall as the most loved <strong>Namkeen manufacturer in Kanpur</strong>. For over three decades, we have been delighting households across India with a diverse range of snacks — from traditional namkeens and crunchy rusks to crispy chips, delicious sweets, and melt-in-mouth cookies.</p><p>Crafted under the leadership of <strong>Mr. S.R. Agarwal</strong>, our brand reflects a rich legacy built on <strong>trust, purity, and love</strong>. Founded in 1989, Family Namkeen (a unit of <strong>Bakers Agri Foods Pvt. Ltd.</strong>) combines the <em>art of traditional Indian snacking</em> with the <em>science of modern hygiene and quality control</em>.</p>"
+          }
+        },
+        "button_kEQWQr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_H4UXia",
+        "text_rKrLx7",
+        "button_kEQWQr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_VbjFDB"
   ]
 }
