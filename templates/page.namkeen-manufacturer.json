@@ -77,11 +77,44 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_kBFinj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_g93qzi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Diverse Product Range",
+            "heading_size": "h1"
+          }
+        },
+        "heading_w9dMRE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Being one of the top <strong>Namkeen manufacturers in Kanpur</strong>, we don’t just make snacks — we make memories. Our product range is carefully crafted to suit every taste bud:",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_g93qzi",
+        "heading_w9dMRE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "rich_text_VbjFDB",
-    "rich_text_qwyaeL"
+    "rich_text_qwyaeL",
+    "rich_text_kBFinj"
   ]
 }
