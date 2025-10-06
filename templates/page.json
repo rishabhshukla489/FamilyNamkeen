@@ -16,68 +16,100 @@
         "padding_bottom": 28
       }
     },
-    "video_brCKMG": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "image_with_text_dgFabi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QfWRzM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_FJ8P3m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jJbyaH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QfWRzM",
+        "text_FJ8P3m",
+        "button_jJbyaH"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "heading": "<em>Family Namkeen</em>",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/ONX5d6dbzMM?si=ZR-XpMoIWx0j6Olj",
-        "cover_image": "shopify://shop_images/Group_149.png",
-        "description": "",
-        "full_width": false,
-        "video_max_width": 800,
-        "border_radius": 12,
-        "video_fit": "contain",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "video_RMwPrN": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "rich_text_Mxj7hp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m3KDPE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_TpMY9m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_tinHAY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_m3KDPE",
+        "text_TpMY9m",
+        "button_tinHAY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "heading": "<em>Factory Tour</em>",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/B3NYsHkh5_g?si=b0kVWRZcN9mg4izR",
-        "cover_image": "shopify://shop_images/Group_148.png",
-        "description": "",
-        "full_width": false,
-        "video_max_width": 800,
-        "border_radius": 12,
-        "video_fit": "contain",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video_LYDCRe": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "<em>Quality Check</em>",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://youtu.be/g__F_FH76Pw?si=R4JtR7v10KrU9AwS",
-        "cover_image": "shopify://shop_images/Group_146.png",
-        "description": "",
-        "full_width": false,
-        "video_max_width": 800,
-        "border_radius": 12,
-        "video_fit": "contain",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
-    "video_brCKMG",
-    "video_RMwPrN",
-    "video_LYDCRe"
+    "image_with_text_dgFabi",
+    "rich_text_Mxj7hp"
   ]
 }
