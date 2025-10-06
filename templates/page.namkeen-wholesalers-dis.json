@@ -109,12 +109,44 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_QqNnqq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bn84UP": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Why Family Namkeen is a Trusted Name Among Wholesalers & Distributors</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_pEhhWj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For over 35 years, <strong>Family Namkeen</strong> has been the preferred choice for <strong>Namkeen Wholesalers & Distributors</strong> due to its consistent quality, wide range of products, and strong market reputation. Let’s look at what makes the brand stand out:</p><h4><strong>1. Legacy of Trust Since 1989</strong></h4><p>Founded by <strong>Mr. S.R. Agarwal</strong>, Family Namkeen was born with a vision to bring authentic taste to every home. Over the years, the brand has earned a reputation for reliability and superior quality — values that wholesalers and distributors depend on.</p><h4><strong>2. Crafted by Bakers Agri Foods Pvt. Ltd.</strong></h4><p>Under the craftsmanship of <strong>Bakers Agri Foods Pvt. Ltd.</strong>, every product from Family Namkeen carries the hallmark of quality. With advanced manufacturing units and strict hygiene protocols, the company ensures every bite remains true to its promise — <em>fresh, safe, and delicious.</em></p><h4><strong>3. A Diverse Product Range</strong></h4><p>Family Namkeen offers a complete assortment of Indian snacks, making it a one-stop solution for wholesalers and distributors. The product line includes:</p><ul><li><br/><strong>Namkeen</strong> – Bhujia, Mixture, Sev, Chiwda, Aloo Bhujia, and more.<br/></li><li><br/><strong>Snacks</strong> – Masala Sticks, Spicy Mix, and traditional Indian munchies.<br/></li><li><br/><strong>Rusk</strong> – Crispy and golden rusks perfect for tea-time.<br/></li><li><br/><strong>Sweets</strong> – Authentic Indian mithai crafted with pure ingredients.<br/></li><li><br/><strong>Chips</strong> – Crunchy potato chips and regional flavors loved by all ages.<br/></li><li><br/><strong>Cookies</strong> – Soft, buttery, and baked with love.<br/></li></ul><p>Such product diversity ensures that <strong>Family Namkeen Wholesalers & Distributors</strong> always have something for every customer segment — from traditional snack lovers to modern-day foodies.</p><h4><strong>4. Hygienic Production & Packaging</strong></h4><p>Family Namkeen blends <strong>age-old recipes with cutting-edge hygiene and packaging standards</strong>. Each product is prepared using premium ingredients and packed with care to retain freshness and flavor. For distributors, this ensures longer shelf life and zero wastage — key factors in profitability.</p><h4><strong>5. Wide Distribution Network</strong></h4><p>Over the decades, the company has built a strong and reliable distribution network across Uttar Pradesh and neighboring states. This robust system helps maintain seamless delivery and stock availability, earning the trust of hundreds of wholesalers and retailers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bn84UP",
+        "text_pEhhWj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "rich_text_4wBXPh",
     "rich_text_Hj8eKe",
-    "rich_text_qtc6BT"
+    "rich_text_qtc6BT",
+    "rich_text_QqNnqq"
   ]
 }
