@@ -264,6 +264,68 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_VVAxPW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_j8Qhk4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Future of Namkeen Wholesalers & Distributors</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_fjzrcJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As the Indian snack market continues to expand, the future for Namkeen Wholesalers & Distributors looks promising. With rising consumer demand for regional flavors, hygienic packaging, and convenient snacking, there is an ever-growing opportunity for distributors to scale their operations.</p><p>Brands like Family Namkeen are continuously innovating — introducing new flavors, healthier variants, and modern packaging — ensuring their distributors remain ahead of the competition. The blend of tradition and technology will define the next phase of growth for this timeless industry.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_j8Qhk4",
+        "text_fjzrcJ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_WrfPWP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VRnHmC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Conclusion",
+            "heading_size": "h1"
+          }
+        },
+        "text_tRWTD9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The world of Namkeen Wholesalers & Distributors is more than just business — it’s about preserving India’s snack heritage and spreading joy through every crunchy bite. With a legacy of over three decades, Family Namkeen, under the guidance of Mr. S.R. Agarwal and Bakers Agri Foods Pvt. Ltd., continues to lead this flavorful journey.</p><p>By choosing Family Namkeen, distributors and wholesalers not only associate with a trusted brand but also with a commitment to taste, quality, and tradition. Every packet tells a story — of Indian flavors, authentic craftsmanship, and the love that binds families together.</p><p>Because at the end of the day, Family Namkeen isn’t just a snack — it’s a celebration of Indian taste, crafted to be remembered.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VRnHmC",
+        "text_tRWTD9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -275,6 +337,8 @@
     "rich_text_iHxaJy",
     "rich_text_x8w8bK",
     "rich_text_8DPbEN",
-    "rich_text_taCGKd"
+    "rich_text_taCGKd",
+    "rich_text_VVAxPW",
+    "rich_text_WrfPWP"
   ]
 }
