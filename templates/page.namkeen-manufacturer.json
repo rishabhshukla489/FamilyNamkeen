@@ -515,6 +515,99 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_NapGRj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MUUG8E": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainability & Community",
+            "heading_size": "h1"
+          }
+        },
+        "text_zTtyY7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe good food should also do good. That’s why Family Namkeen invests in sustainable practices:</p><ul><li>Minimal food wastage during production<br/></li><li>Energy-efficient machinery<br/></li><li>Eco-friendly packaging solutions under development<br/></li><li>Employment generation for local communities<br/></li></ul><p>We’re not just building a business; we’re nurturing a legacy for future generations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MUUG8E",
+        "text_zTtyY7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_6FTB3p": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_htVfbx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Family Namkeen – A Celebration of Indian Flavors",
+            "heading_size": "h1"
+          }
+        },
+        "text_QTem6X": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For over three decades, Family Namkeen has been a <strong>symbol of trust, tradition, and taste</strong>. From crunchy Namkeens and rusks to sweet treats and baked cookies, every product carries a story — a story of craftsmanship, care, and community.</p><p>So, whether you’re enjoying a peaceful evening with chai or hosting a festive gathering, make sure you have Family Namkeen by your side. Because <strong>Family isn’t just a snack — it’s a celebration.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_htVfbx",
+        "text_QTem6X"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_QWJJaj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_H3UrdH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact the Best Namkeen Manufacturer in Kanpur",
+            "heading_size": "h1"
+          }
+        },
+        "text_HH8NCf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking for premium quality snacks for your home, store, or business? Connect with <strong>Family Namkeen</strong> today.</p><ul><li><strong>Company Name:</strong> Bakers Agri Foods Pvt. Ltd.<br/></li><li><strong>Brand:</strong> Family Namkeen<br/></li><li><strong>Founded:</strong> 1989<br/></li><li><strong>Location:</strong> Kanpur, Uttar Pradesh<br/></li><li><strong>Products:</strong> Namkeen, Snacks, Rusk, Sweets, Chips, Cookies<br/></li></ul><p><em>Experience authentic flavors. Taste the legacy.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_H3UrdH",
+        "text_HH8NCf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -531,6 +624,9 @@
     "rich_text_3nzdQ4",
     "rich_text_3b7BBF",
     "rich_text_MgqBFC",
-    "rich_text_GcztTA"
+    "rich_text_GcztTA",
+    "rich_text_NapGRj",
+    "rich_text_6FTB3p",
+    "rich_text_QWJJaj"
   ]
 }
