@@ -63,23 +63,42 @@
           "settings": {
             "text": "<p>The Indian snack industry has witnessed tremendous growth over the last decade, and Namkeen holds a major share in it. With the increasing demand for quick bites, ready-to-eat products, and regional flavors, the role of Namkeen Wholesalers & Distributors has become more vital than ever.</p><p>According to market insights, the Indian Namkeen industry is expected to grow at a CAGR of over 10% in the coming years. Consumers today look for taste, hygiene, variety, and brand trust, and companies like Family Namkeen have set a benchmark in all these areas. Wholesalers and distributors are the essential link connecting traditional taste-makers with millions of snack lovers across cities and rural markets alike.</p>"
           }
-        },
-        "button_RmETJH": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_yTKHBa",
-        "text_Ec9edK",
-        "button_RmETJH"
+        "text_Ec9edK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_qtc6BT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tRaxV4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Who Are Namkeen Wholesalers & Distributors?</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rdQX9Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Namkeen Wholesalers & Distributors</strong> play a crucial role in the snack supply chain. They act as the bridge between manufacturers and retailers, ensuring that every product reaches customers in its freshest, most flavorful form.</p><p>Their key responsibilities include:</p><ul><li><strong>Bulk Procurement:</strong> Purchasing Namkeen and snack products directly from manufacturers at wholesale rates.<br/></li><li><strong>Distribution:</strong> Supplying to retail outlets, supermarkets, and online sellers.<br/></li><li><strong>Market Expansion:</strong> Helping brands like <strong>Family Namkeen</strong> reach untapped markets and grow their presence.<br/></li><li><strong>Inventory Management:</strong> Ensuring steady stock availability to meet market demand.<br/></li><li><strong>Quality Assurance:</strong> Maintaining product freshness through proper storage and logistics.<br/></li></ul><p>In essence, without Namkeen wholesalers and distributors, the crunchy delights we enjoy daily might never make it from the factory to your favorite tea table.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tRaxV4",
+        "text_rdQX9Q"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -95,6 +114,7 @@
   "order": [
     "main",
     "rich_text_4wBXPh",
-    "rich_text_Hj8eKe"
+    "rich_text_Hj8eKe",
+    "rich_text_qtc6BT"
   ]
 }
