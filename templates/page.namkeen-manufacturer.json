@@ -109,12 +109,60 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_drjwr4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rUqaya": {
+          "type": "heading",
+          "settings": {
+            "heading": "Namkeen",
+            "heading_size": "h1"
+          }
+        },
+        "text_gpTnLx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our signature range includes a variety of traditional Indian namkeens — spicy, tangy, crunchy, and utterly delicious. From Bhujia and Mixtures to Sev and Aloo Lachha, we offer flavors that remind you of home.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_bAeQtU": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rUqaya",
+        "text_gpTnLx",
+        "button_bAeQtU"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "rich_text_VbjFDB",
     "rich_text_qwyaeL",
-    "rich_text_kBFinj"
+    "rich_text_kBFinj",
+    "image_with_text_drjwr4"
   ]
 }
