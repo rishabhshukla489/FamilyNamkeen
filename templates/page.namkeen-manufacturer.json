@@ -156,6 +156,241 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_KGF9Hj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Gjz6Ma": {
+          "type": "heading",
+          "settings": {
+            "heading": "Snacks",
+            "heading_size": "h1"
+          }
+        },
+        "text_pUDA96": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Perfect for tea-time or mid-day cravings, our snack collection brings together modern taste and traditional crunch. Each bite bursts with freshness and flavor.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_QFmLVQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gjz6Ma",
+        "text_pUDA96",
+        "button_QFmLVQ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_FhffxL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_R3yC9J": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rusk",
+            "heading_size": "h1"
+          }
+        },
+        "text_fWTqtJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our rusks are twice-baked to golden perfection, making them the ideal companion to a cup of chai. Crisp, light, and flavorful — they’re a favorite in every Kanpuriya household.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Jdq9xz": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_R3yC9J",
+        "text_fWTqtJ",
+        "button_Jdq9xz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_iUf9Y8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VJJ8ig": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sweets",
+            "heading_size": "h1"
+          }
+        },
+        "text_bx7LMt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No celebration is complete without something sweet. Our sweets combine the finest ingredients with authentic recipes to deliver indulgence in every bite.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Vmriqz": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VJJ8ig",
+        "text_bx7LMt",
+        "button_Vmriqz"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_8EbN3i": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9XG4ee": {
+          "type": "heading",
+          "settings": {
+            "heading": "Chips",
+            "heading_size": "h1"
+          }
+        },
+        "text_KAWX6D": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From classic salted to tangy masala, our chips range caters to both kids and adults who love snacking the smart way.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_WPAjwq": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9XG4ee",
+        "text_KAWX6D",
+        "button_WPAjwq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_PM9mFQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_im8qdV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cookies",
+            "heading_size": "h1"
+          }
+        },
+        "text_ff3XWx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Baked with love and crafted with care, our cookies bring the richness of butter and the joy of crunch together — a perfect treat for all ages.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CYhnUf": {
+          "type": "button",
+          "settings": {
+            "button_label": "TRY NOW",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_im8qdV",
+        "text_ff3XWx",
+        "button_CYhnUf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -163,6 +398,11 @@
     "rich_text_VbjFDB",
     "rich_text_qwyaeL",
     "rich_text_kBFinj",
-    "image_with_text_drjwr4"
+    "image_with_text_drjwr4",
+    "image_with_text_KGF9Hj",
+    "image_with_text_FhffxL",
+    "image_with_text_iUf9Y8",
+    "image_with_text_8EbN3i",
+    "image_with_text_PM9mFQ"
   ]
 }
