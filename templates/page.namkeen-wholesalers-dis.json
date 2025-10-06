@@ -140,6 +140,130 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_iHxaJy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J4yNpF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Why Choose Family Namkeen as Your Distribution Partner</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_RKw4MH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Becoming a part of the <strong>Family Namkeen Wholesalers & Distributors</strong> network means joining hands with a brand that values partnership, quality, and growth. Here’s why distributors love working with Family Namkeen:</p><ul><li><strong>High Consumer Demand:</strong> The brand’s long-standing reputation drives natural customer interest and sales.<br/></li><li><strong>Consistent Product Supply:</strong> Steady production ensures regular replenishment of stock.<br/></li><li><strong>Attractive Margins:</strong> Competitive pricing allows wholesalers and distributors to earn sustainable profits.<br/></li><li><strong>Marketing Support:</strong> Promotional materials and brand campaigns help drive visibility in local markets.<br/></li><li><strong>Trusted Brand Image:</strong> Wholesalers benefit from associating with a name synonymous with trust and taste.<br/></li></ul><p>Whether it’s a small town or a metro city, partnering with <strong>Family Namkeen</strong> guarantees consistent sales and long-term business success.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_J4yNpF",
+        "text_RKw4MH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_x8w8bK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Yw7XXc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Importance of Quality in the Namkeen Distribution Business</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_RqQqyM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In the fast-moving snack industry, maintaining quality and freshness is the key to customer satisfaction. Wholesalers and distributors rely on brands like Family Namkeen that adhere to the highest standards of manufacturing and packaging.</p><p>Each batch undergoes stringent quality checks — from raw material sourcing to final sealing — ensuring the snacks are not only tasty but also safe for consumption. This commitment to excellence helps wholesalers maintain their reputation in the market.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Yw7XXc",
+        "text_RqQqyM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_8DPbEN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mpDFf8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Role of Namkeen Wholesalers & Distributors in Market Growth</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_i3PLWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The success of any FMCG brand depends largely on the efficiency of its distribution network. <strong>Namkeen Wholesalers & Distributors</strong> are vital in:</p><ul><li><strong>Expanding market reach</strong> by bringing products to new cities and rural areas.<br/></li><li><strong>Understanding consumer preferences</strong> and sharing valuable feedback with manufacturers.<br/></li><li><strong>Driving regional growth</strong> by introducing local flavor variations and seasonal packs.<br/></li></ul><p>Through a well-connected network, distributors help brands like Family Namkeen achieve both scale and consistency, making their products accessible to millions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mpDFf8",
+        "text_i3PLWM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_taCGKd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jyCM3r": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>How Family Namkeen Ensures Distributor Success</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_UULnJK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Family Namkeen’s success story is built on strong partnerships with its wholesalers and distributors. Here’s how the brand empowers its network:</p><ul><li><strong>Regular Supply Chain Optimization</strong> – Ensures fast and reliable delivery.<br/></li><li><strong>Transparent Pricing Policies</strong> – Builds trust and long-term relationships.<br/></li><li><strong>Continuous Innovation</strong> – Keeps the product line exciting for consumers.<br/></li><li><strong>Brand Promotions & Festive Offers</strong> – Boosts sales and visibility.<br/></li><li><strong>Dedicated Support Team</strong> – Helps partners with queries, logistics, and order management.<br/></li></ul><p>The brand doesn’t just see its distributors as business partners but as an integral part of the Family Namkeen family.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jyCM3r",
+        "text_UULnJK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -147,6 +271,10 @@
     "rich_text_4wBXPh",
     "rich_text_Hj8eKe",
     "rich_text_qtc6BT",
-    "rich_text_QqNnqq"
+    "rich_text_QqNnqq",
+    "rich_text_iHxaJy",
+    "rich_text_x8w8bK",
+    "rich_text_8DPbEN",
+    "rich_text_taCGKd"
   ]
 }
