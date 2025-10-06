@@ -131,7 +131,7 @@
           "type": "button",
           "settings": {
             "button_label": "TRY NOW",
-            "button_link": "",
+            "button_link": "https://familysnacks.in/collections/namkeen",
             "button_style_secondary": false
           }
         }
