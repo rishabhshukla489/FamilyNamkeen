@@ -48,7 +48,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 68,
-        "padding_bottom": 52
+        "padding_bottom": 24
       }
     },
     "rich_text_Hj8eKe": {
@@ -58,7 +58,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>The Growing Market of Namkeen in India</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_Ec9edK": {
@@ -72,14 +72,17 @@
         "heading_yTKHBa",
         "text_Ec9edK"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "featured_collection_MtDfeB": {
@@ -88,8 +91,8 @@
       "settings": {
         "collection": "chips",
         "products_to_show": 4,
-        "title": "Products",
-        "heading_size": "h1",
+        "title": "<strong>Products</strong>",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -107,8 +110,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 24,
+        "padding_bottom": 24,
         "heading_image_size": 60,
         "heading_image_position": "left"
       }
