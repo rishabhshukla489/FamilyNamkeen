@@ -57,8 +57,8 @@
         "heading_ahfM9N": {
           "type": "heading",
           "settings": {
-            "heading": "Why Kanpur Loves Family Namkeen",
-            "heading_size": "h1"
+            "heading": "<strong>Why Kanpur Loves Family Namkeen</strong>",
+            "heading_size": "h2"
           }
         },
         "text_BLBTzN": {
@@ -91,7 +91,7 @@
         "heading_g93qzi": {
           "type": "heading",
           "settings": {
-            "heading": "Our Diverse Product Range",
+            "heading": "<em><strong>Our Diverse Product Range</strong></em>",
             "heading_size": "h1"
           }
         },
