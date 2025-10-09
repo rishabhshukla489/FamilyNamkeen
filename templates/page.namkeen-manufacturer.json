@@ -151,6 +151,7 @@
         "text_gpTnLx",
         "button_bAeQtU"
       ],
+      "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Group_99.png",
@@ -429,6 +430,9 @@
         "heading_BBCRBg",
         "text_HzkP34"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -459,6 +463,9 @@
       "block_order": [
         "heading_mQgVgG",
         "text_erqUm4"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -491,6 +498,9 @@
         "heading_AHtyew",
         "text_LhdqaA"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -521,6 +531,9 @@
       "block_order": [
         "heading_ghWYxe",
         "text_VTQEwW"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -553,6 +566,9 @@
         "heading_MUUG8E",
         "text_zTtyY7"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -584,6 +600,9 @@
         "heading_htVfbx",
         "text_QTem6X"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -614,6 +633,9 @@
       "block_order": [
         "heading_H3UrdH",
         "text_HH8NCf"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
