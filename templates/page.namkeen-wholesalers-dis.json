@@ -123,7 +123,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Who Are Namkeen Wholesalers & Distributors?</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_rdQX9Q": {
@@ -136,6 +136,9 @@
       "block_order": [
         "heading_tRaxV4",
         "text_rdQX9Q"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -153,8 +156,8 @@
       "settings": {
         "collection": "namkeen",
         "products_to_show": 4,
-        "title": "Products",
-        "heading_size": "h1",
+        "title": "<strong>Products</strong>",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -172,8 +175,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 24,
+        "padding_bottom": 24,
         "heading_image_size": 60,
         "heading_image_position": "left"
       }
@@ -185,7 +188,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Why Family Namkeen is a Trusted Name Among Wholesalers & Distributors</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_pEhhWj": {
@@ -198,6 +201,9 @@
       "block_order": [
         "heading_bn84UP",
         "text_pEhhWj"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -216,7 +222,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Why Choose Family Namkeen as Your Distribution Partner</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_RKw4MH": {
@@ -230,14 +236,17 @@
         "heading_J4yNpF",
         "text_RKw4MH"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "rich_text_x8w8bK": {
@@ -247,7 +256,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>The Importance of Quality in the Namkeen Distribution Business</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_RqQqyM": {
@@ -261,14 +270,17 @@
         "heading_Yw7XXc",
         "text_RqQqyM"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "rich_text_8DPbEN": {
@@ -278,7 +290,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>The Role of Namkeen Wholesalers & Distributors in Market Growth</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_i3PLWM": {
@@ -292,14 +304,17 @@
         "heading_mpDFf8",
         "text_i3PLWM"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "rich_text_taCGKd": {
@@ -309,7 +324,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>How Family Namkeen Ensures Distributor Success</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_UULnJK": {
@@ -323,14 +338,17 @@
         "heading_jyCM3r",
         "text_UULnJK"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "rich_text_VVAxPW": {
@@ -340,7 +358,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>The Future of Namkeen Wholesalers & Distributors</strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_fjzrcJ": {
@@ -354,14 +372,17 @@
         "heading_j8Qhk4",
         "text_fjzrcJ"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "rich_text_WrfPWP": {
@@ -370,8 +391,8 @@
         "heading_VRnHmC": {
           "type": "heading",
           "settings": {
-            "heading": "Conclusion",
-            "heading_size": "h1"
+            "heading": "<strong>Conclusion</strong>",
+            "heading_size": "h2"
           }
         },
         "text_tRWTD9": {
@@ -385,13 +406,16 @@
         "heading_VRnHmC",
         "text_tRWTD9"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 24,
         "padding_bottom": 52
       }
     }
