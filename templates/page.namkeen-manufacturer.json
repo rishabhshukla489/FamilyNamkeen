@@ -38,6 +38,9 @@
         "heading_H4UXia",
         "text_rKrLx7"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -68,6 +71,9 @@
       "block_order": [
         "heading_ahfM9N",
         "text_BLBTzN"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -100,6 +106,9 @@
       "block_order": [
         "heading_g93qzi",
         "heading_w9dMRE"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
