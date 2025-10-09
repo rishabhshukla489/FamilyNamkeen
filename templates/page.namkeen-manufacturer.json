@@ -126,8 +126,8 @@
         "heading_rUqaya": {
           "type": "heading",
           "settings": {
-            "heading": "Namkeen",
-            "heading_size": "h1"
+            "heading": "<strong>Namkeen</strong>",
+            "heading_size": "h2"
           }
         },
         "text_gpTnLx": {
@@ -175,8 +175,8 @@
         "heading_Gjz6Ma": {
           "type": "heading",
           "settings": {
-            "heading": "Snacks",
-            "heading_size": "h1"
+            "heading": "<strong>Snacks</strong>",
+            "heading_size": "h2"
           }
         },
         "text_pUDA96": {
@@ -223,8 +223,8 @@
         "heading_R3yC9J": {
           "type": "heading",
           "settings": {
-            "heading": "Rusk",
-            "heading_size": "h1"
+            "heading": "<strong>Rusk</strong>",
+            "heading_size": "h2"
           }
         },
         "text_fWTqtJ": {
@@ -271,8 +271,8 @@
         "heading_VJJ8ig": {
           "type": "heading",
           "settings": {
-            "heading": "Sweets",
-            "heading_size": "h1"
+            "heading": "<strong>Sweets</strong>",
+            "heading_size": "h2"
           }
         },
         "text_bx7LMt": {
@@ -319,8 +319,8 @@
         "heading_9XG4ee": {
           "type": "heading",
           "settings": {
-            "heading": "Chips",
-            "heading_size": "h1"
+            "heading": "<strong>Chips</strong>",
+            "heading_size": "h2"
           }
         },
         "text_KAWX6D": {
@@ -367,8 +367,8 @@
         "heading_im8qdV": {
           "type": "heading",
           "settings": {
-            "heading": "Cookies",
-            "heading_size": "h1"
+            "heading": "<strong>Cookies</strong>",
+            "heading_size": "h2"
           }
         },
         "text_ff3XWx": {
