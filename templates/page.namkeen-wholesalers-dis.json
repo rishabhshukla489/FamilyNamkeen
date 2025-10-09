@@ -23,7 +23,7 @@
         "heading_ykeTAa": {
           "type": "heading",
           "settings": {
-            "heading": "Namkeen Wholesalers & Distributors: Delivering India’s Favorite Snacks with Taste, Trust, and Tradition",
+            "heading": "<em><strong>Namkeen Wholesalers & Distributors: Delivering India’s Favorite Snacks with Taste, Trust, and Tradition</strong></em>",
             "heading_size": "h1"
           }
         },
@@ -37,6 +37,9 @@
       "block_order": [
         "heading_ykeTAa",
         "text_LpzQBQ"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; padding-top: 20px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
