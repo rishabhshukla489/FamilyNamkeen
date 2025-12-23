@@ -70,7 +70,6 @@
         },
         "slide_DRjYiy": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/family_new.png",
             "image_overlay_opacity": 0,
