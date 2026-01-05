@@ -74,6 +74,53 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* ===== FIX HEADER SPACE ISSUE ===== */
+
+/* Header should NOT overflow / overlap other sections */
+.header-wrapper,
+.header {
+  overflow: hidden !important;
+}
+
+/* Give header enough height so logo fits naturally */
+.header {
+  min-height: 110px; /* increase if your logo is taller */
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* Keep logo inside header space (no translateY) */
+.header__heading-logo-wrapper {
+  transform: scale(1.35); /* only scale, no move down */
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sticky state - slightly smaller logo */
+.scrolled-past-header .header__heading-logo-wrapper {
+  transform: scale(1.1);
+}
+
+/* Desktop fine tune */
+@media screen and (min-width: 990px) {
+  .header {
+    min-height: 130px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .header__heading-logo-wrapper {
+    transform: scale(1.55);
+  }
+
+  .scrolled-past-header .header__heading-logo-wrapper {
+    transform: scale(1.25);
+  }
+}
+
 </style>
 
 {%- style -%}
