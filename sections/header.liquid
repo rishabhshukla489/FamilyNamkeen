@@ -283,6 +283,22 @@
       height: 28px;
     }
   }
+  /* 🔒 LOGO ALIGNMENT FIX – ONLY POSITION, NO OTHER CHANGE */
+.header__heading {
+  display: flex;
+  justify-content: center;
+}
+
+.header__heading-link {
+  display: flex;
+  justify-content: center;
+}
+
+.header__heading-logo-wrapper {
+  transform: scale(1.5) translateY(-10px) !important;
+  margin: 0 auto !important;
+}
+
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
