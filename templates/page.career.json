@@ -17,17 +17,6 @@
         "padding_bottom": 28
       }
     },
-    "contact_form_8H8hbN": {
-      "type": "contact-form",
-      "name": "t:sections.contact-form.presets.name",
-      "settings": {
-        "heading": "Contact form",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_liquid_4VEwxT": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -41,7 +30,6 @@
   },
   "order": [
     "main",
-    "contact_form_8H8hbN",
     "custom_liquid_4VEwxT"
   ]
 }
