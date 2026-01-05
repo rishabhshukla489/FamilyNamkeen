@@ -228,6 +228,50 @@
     .floating-whatsapp { bottom: 15px; right: 15px; }
     .floating-whatsapp__button { width: 50px; height: 50px; }
     .floating-whatsapp__button .svg-wrapper { width: 28px; height: 28px; }
+    /* ===============================
+   FIX: Logo Center + Icons Right
+   (No other changes)
+   =============================== */
+
+/* Header layout correction */
+.header {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center !important;
+}
+
+/* LEFT: Menu stays left */
+.header__inline-menu {
+  justify-self: start !important;
+}
+
+/* CENTER: Logo perfectly centered */
+.header__heading {
+  justify-self: center !important;
+  text-align: center !important;
+}
+
+/* RIGHT: All icons aligned right */
+.header__icons {
+  justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+/* Ensure logo does not shift */
+.header__heading-link {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Mobile safe (no change in behaviour) */
+@media (max-width: 749px) {
+  .header {
+    grid-template-columns: auto 1fr auto !important;
+  }
+}
+
   }
 {%- endstyle -%}
 
