@@ -17,7 +17,7 @@
         ".header__active-menu-item {color: #006338;}"
       ],
       "settings": {
-        "logo_position": "middle-center",
+        "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
