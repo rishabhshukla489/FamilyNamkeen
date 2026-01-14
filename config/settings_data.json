@@ -453,7 +453,8 @@
     "custom_css": [
       ".header__active-menu-item {color: #006338;}",
       ".shopify-policy__container {padding-bottom: 5em; padding-top: 5em;}",
-      ".shopify-payment-button__button.shopify-payment-button__button--unbranded {display: none !important;}"
+      ".shopify-payment-button__button.shopify-payment-button__button--unbranded {display: none !important;}",
+      ".quick-add {position: relative; grid-row-start: 4; margin: 0 0 1rem; z-index: 1; display: none;}"
     ]
   }
 }
