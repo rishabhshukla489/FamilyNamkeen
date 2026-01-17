@@ -64,11 +64,35 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "rich_text_XefG4m": {
+      "type": "rich-text",
+      "blocks": {
+        "text_NhzUGM": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Founding Story:</h3><p><br/>In the late 80s, Mr. Sri Ram Agarwal made a bold decision to enter the snacking industry and<br/>create a unique identity for himself. His vision and entrepreneurial spirit led to the birth of<br/>Family Snacks. Driven by a commitment to quality and innovation, Mr. Agarwal focused on<br/>producing snack products that families could trust and enjoy.<br/></p><p><br/>This marked the beginning of a successful journey, as the brand quickly gained recognition<br/>for its reliable and delicious offerings, laying the foundation for a lasting presence in the<br/>market.<br/></p><p><br/>In 2009, we embarked on a delicious journey by establishing our manufacturing unit in<br/><strong>Malwa, Fatehpur</strong>. Armed with a vision to provide high-quality snacks, we started<br/>manufacturing two core products: <strong>Cookies and Rusk</strong>.<br/></p><p><br/>Our foundational belief was to create snacks that not only satisfy cravings but also deliver<br/>on taste and quality. Rusk was launched with a production capacity of <strong>5 Metric Tons</strong>.<br/></p><p><br/>In 2013, the company made significant advancements by launching a range of<br/><strong>salty snacks</strong>, diversifying its product offerings.<br/></p><p><br/>Furthermore, it became the first brand in the <strong>Eastern Uttar Pradesh (U.P.)</strong> region to<br/>adopt <strong>tunnel oven technology</strong>, which is typically used to improve the efficiency and<br/>quality of baking processes.<br/></p><p><br/>This technological upgrade helped enhance production capabilities and consistency in the<br/>product.<br/></p><p><br/>In addition to this, the company increased its rusk production capacity by<br/><strong>10 Metric Tons</strong>. This boost in production capacity allowed the company to meet<br/>growing consumer demand and expand its market share in the region.<br/></p><p><br/>From 2016, the company continuously upgraded its factory by equipping it with<br/><strong>high-tech machinery</strong>. These technological advancements significantly improved<br/>production efficiency and product quality.<br/></p><p><br/>As a result, the company experienced a substantial increase in production capacity,<br/>allowing it to meet rising demand more effectively.<br/></p><p><br/>The enhanced production capabilities also contributed to an expansion in the company's<br/><strong>distribution network</strong>. The increased output enabled the company to partner with more<br/>distributors, thereby broadening its market reach and strengthening its presence across regions.<br/></p><p><br/>This expansion played a key role in boosting the company's growth and competitiveness<br/>during this period.<br/></p><p><br/>In 2020, the company adopted <strong>world-class technology</strong> for the production of rusks,<br/>cookies, and namkeen.<br/></p><p><br/>This upgrade in manufacturing technology allowed the company to enhance the quality,<br/>consistency, and efficiency of its production processes. By incorporating advanced machinery<br/>and techniques, the company was able to meet high production demands while ensuring superior<br/>product quality.<br/></p><p><br/>This technological leap also positioned the company to stay competitive in the rapidly<br/>evolving snack and bakery industry.<br/></p><p><br/>In 2024, the company further expanded its product portfolio by launching<br/><strong>potato chips</strong>.<br/></p><p><br/>This move marked a strategic effort to diversify its offerings in the snack industry,<br/>catering to the growing consumer demand for crispy, flavourful snacks.<br/></p><p><br/>The introduction of potato chips aimed to capture a larger market share and appeal to a<br/>wider range of snack enthusiasts, further strengthening the company's position in the<br/>competitive snack market.<br/></p><p><br/><strong>At Present:</strong> The company is currently in the process of setting up a manufacturing<br/>unit for <strong>sweets</strong>.<br/></p><p><br/>This strategic move signifies its ambition to further diversify its product portfolio and<br/>tap into the growing demand for confectionery items.<br/></p><p><br/>By expanding into the sweets segment, the company aims to offer a broader range of<br/>products to its customers, enhancing its presence in the food industry.<br/></p><p><br/>The new manufacturing unit will feature advanced technology to ensure high-quality<br/>production, aligning with the company's commitment to innovation and excellence.<br/></p><h3>Company Network:</h3><p><br/>Our expansive network of <strong>350+ Distributors</strong> spans diverse regions, ensuring our<br/>products are available to a broad customer base.<br/><br/>Each distributor is a valued partner, playing a crucial role in maintaining our reputation<br/>for quality and dependability.<br/></p><h3><strong>Future Vision:</strong></h3><p>Looking ahead, our company is committed to achieving ambitious goals:</p><ul><li>    <strong>Enhanced Production Capacity:</strong> We aim to reach a rusk production capacity of<br/>    <strong>25 Metric Tons by 2025</strong>, ensuring we meet the growing demand for our products.<br/>  </li><li> <strong>Expanded Product Range:</strong> We plan to introduce a wider range of products,<br/>    catering to diverse customer preferences and enhancing our market presence.<br/>  </li><li>    <strong>Improved Services:</strong> Continuously striving for excellence, we aim to provide<br/>    better services that exceed customer expectations.<br/>  </li><li>    <strong>Network Growth:</strong> Our vision includes expanding our network by adding more<br/>    super stockists and distributors, strengthening our reach and operational efficiency.<br/>  </li><li>    <strong>Brand Vision:</strong> Our vision is to become the most trusted and innovative brand<br/>    in the packaged food industry in India, transforming the way people experience food<br/>    through quality, convenience, and authenticity.<br/>  </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_NhzUGM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "rich_text_Bna8iG",
-    "image_banner_6AqgXE"
+    "image_banner_6AqgXE",
+    "rich_text_XefG4m"
   ]
 }
