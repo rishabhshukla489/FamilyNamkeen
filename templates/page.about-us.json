@@ -90,23 +90,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "custom_liquid_CbV3WM": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
     "rich_text_Bna8iG",
     "image_banner_6AqgXE",
-    "rich_text_XefG4m",
-    "custom_liquid_CbV3WM"
+    "rich_text_XefG4m"
   ]
 }
