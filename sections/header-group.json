@@ -13,7 +13,9 @@
   "sections": {
     "header": {
       "type": "header",
-      "custom_css": [],
+      "custom_css": [
+        ".header__icon .icon {height: 2rem; width: 2rem; fill: none; vertical-align: middle; display: none;}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "mobile_logo_position": "left",
