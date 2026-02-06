@@ -15,7 +15,7 @@
       "type": "header",
       "custom_css": [
         ".header__active-menu-item {color: #006338;}",
-        ".svg-wrapper>svg {height: 100%; width: 100%; display: none;}"
+        ".svg-wrapper > svg {height: 100%; width: 100%; display: none;}"
       ],
       "settings": {
         "logo_position": "middle-left",
