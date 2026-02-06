@@ -13,10 +13,7 @@
   "sections": {
     "header": {
       "type": "header",
-      "custom_css": [
-        ".header__active-menu-item {color: #006338;}",
-        ".svg-wrapper > svg {height: 100%; width: 100%; display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-left",
         "mobile_logo_position": "left",
