@@ -235,6 +235,7 @@
     },
     "featured_collection_TxbT3T": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 600px) {.collection__title img {display: none; }}"
       ],
