@@ -44,7 +44,7 @@
           "type": "text",
           "settings": {
             "heading": "BAKERS AGRI FOODS PVT. LTD",
-            "subtext": "<p>301, City Centre The Mall, Kanpur - 208001 624, Rawatpur, Chaudagra, Fatehpur (UP) - 212665</p><p>info@familysnacks.in</p><p>+917525046504 / +917525045271</p>"
+            "subtext": "<p>301, City Centre The Mall, Kanpur - 208001 624, Rawatpur, Chaudagra, Fatehpur (UP) - 212665</p><p><a href=\"mailto:info@familysnacks.in\" title=\"mailto:info@familysnacks.in\">info@familysnacks.in</a></p><p><a href=\"tel:+917525046504\" title=\"tel:+917525046504\">+917525046504</a> / <a href=\"tel:+917525045271\" title=\"tel:+917525045271\">+917525045271</a></p>"
           }
         }
       },
