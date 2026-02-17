@@ -55,7 +55,8 @@
       ],
       "custom_css": [
         ".footer-block__newsletter {display: none;}",
-        ".footer__content-top {padding-top: 2vw; padding-bottom: 0;}"
+        ".footer__content-top {padding-top: 2vw; padding-bottom: 0;}",
+        ".rte a {color: rgb(255 255 255 / 85%);}"
       ],
       "settings": {
         "color_scheme": "scheme-9fb2a1b4-1a83-4959-84f9-f17b04a9ac90",
