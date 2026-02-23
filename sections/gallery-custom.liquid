@@ -1,7 +1,13 @@
 {% schema %}
 {
-  "name": "Custom Gallery",
+  "name": "Auto Gallery",
   "settings": [
+    {
+      "type": "text",
+      "id": "file_prefix",
+      "label": "Image Filename Prefix",
+      "default": "gallery-"
+    },
     {
       "type": "range",
       "id": "desktop_columns",
@@ -28,46 +34,11 @@
       "max": 30,
       "step": 2,
       "default": 10
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_border",
-      "label": "Enable Border",
-      "default": false
-    },
-    {
-      "type": "range",
-      "id": "border_size",
-      "label": "Border Size (px)",
-      "min": 1,
-      "max": 10,
-      "step": 1,
-      "default": 1
-    },
-    {
-      "type": "color",
-      "id": "border_color",
-      "label": "Border Color",
-      "default": "#dddddd"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "image",
-      "name": "Gallery Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Select Image"
-        }
-      ]
     }
   ],
   "presets": [
     {
-      "name": "Custom Gallery",
-      "category": "Custom"
+      "name": "Auto Gallery"
     }
   ]
 }
@@ -90,18 +61,15 @@
   width: 100%;
   height: auto;
   display: block;
-  {% if section.settings.enable_border %}
-  border: {{ section.settings.border_size }}px solid {{ section.settings.border_color }};
-  {% endif %}
 }
 </style>
 
 <div class="gallery-wrapper-{{ section.id }}">
-  {% for block in section.blocks %}
-    {% if block.settings.image != blank %}
+  {% for file in shop.files %}
+    {% if file.filename contains section.settings.file_prefix %}
       <div>
         <img 
-          src="{{ block.settings.image | image_url: width: 800 }}" 
+          src="{{ file | file_url }}" 
           alt="Gallery Image"
           loading="lazy"
         >
