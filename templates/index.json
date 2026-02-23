@@ -401,7 +401,7 @@
         "video_url": "https://www.youtube.com/watch?v=B3NYsHkh5_g",
         "cover_image": "shopify://shop_images/Screenshot_2026-02-23_143533.png",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "video_max_width": 1200,
         "border_radius": 12,
         "video_fit": "contain",
