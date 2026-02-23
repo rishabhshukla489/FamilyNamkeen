@@ -1,0 +1,111 @@
+{% schema %}
+{
+  "name": "Custom Gallery",
+  "settings": [
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "label": "Desktop Images Per Row",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "mobile_columns",
+      "label": "Mobile Images Per Row",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Image Gap (px)",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_border",
+      "label": "Enable Border",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "border_size",
+      "label": "Border Size (px)",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#dddddd"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Gallery Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Gallery",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.gallery-wrapper-{{ section.id }} {
+  display: grid;
+  grid-template-columns: repeat({{ section.settings.mobile_columns }}, 1fr);
+  gap: {{ section.settings.gap }}px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-wrapper-{{ section.id }} {
+    grid-template-columns: repeat({{ section.settings.desktop_columns }}, 1fr);
+  }
+}
+
+.gallery-wrapper-{{ section.id }} img {
+  width: 100%;
+  height: auto;
+  display: block;
+  {% if section.settings.enable_border %}
+  border: {{ section.settings.border_size }}px solid {{ section.settings.border_color }};
+  {% endif %}
+}
+</style>
+
+<div class="gallery-wrapper-{{ section.id }}">
+  {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+      <div>
+        <img 
+          src="{{ block.settings.image | image_url: width: 800 }}" 
+          alt="Gallery Image"
+          loading="lazy"
+        >
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
