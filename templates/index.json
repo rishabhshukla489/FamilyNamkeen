@@ -400,7 +400,7 @@
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=B3NYsHkh5_g",
         "description": "",
-        "full_width": true,
+        "full_width": false,
         "video_max_width": 800,
         "border_radius": 12,
         "video_fit": "contain",
