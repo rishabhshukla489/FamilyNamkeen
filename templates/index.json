@@ -391,6 +391,24 @@
         "show_text_below": true
       }
     },
+    "video_BmChgr": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=B3NYsHkh5_g",
+        "description": "",
+        "full_width": true,
+        "video_max_width": 800,
+        "border_radius": 12,
+        "video_fit": "contain",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_d9bB9V": {
       "type": "image-banner",
       "custom_css": [
@@ -460,6 +478,7 @@
     "image_banner_6arbXr",
     "video_pzCgHP",
     "image_banner_fVRTU7",
+    "video_BmChgr",
     "image_banner_d9bB9V",
     "image_banner_mgeYqY",
     "contact_form_cAFMFG"
