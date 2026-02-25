@@ -1,12 +1,7 @@
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
-<link
-  rel="stylesheet"
-  href="{{ 'component-cart-notification.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'"
->
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -23,37 +18,21 @@
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
-    .scrolled-past-header .header__heading-logo-wrapper {
-      width: 75%;
-    }
+    .scrolled-past-header .header__heading-logo-wrapper { width: 75%; }
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
     @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none;
-      }
+      header-drawer { display: none; }
     }
   {%- endif -%}
 
-  .menu-drawer-container {
-    display: flex;
-  }
+  .menu-drawer-container { display: flex; }
 
-  .list-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  .list-menu { list-style: none; padding: 0; margin: 0; }
+  .list-menu--inline { display: inline-flex; flex-wrap: wrap; }
 
-  .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-
-  summary.list-menu__item {
-    padding-right: 2.7rem;
-  }
+  summary.list-menu__item { padding-right: 2.7rem; }
 
   .list-menu__item {
     display: flex;
@@ -69,78 +48,8 @@
   }
 
   @media screen and (min-width: 750px) {
-    .list-menu__item--link {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-    }
+    .list-menu__item--link { padding-bottom: 0.5rem; padding-top: 0.5rem; }
   }
-  /* ✅ FORCE SHOW SEARCH ICON */
-.header__icon--search,
-.header__search,
-.header__search details,
-.header__search summary{
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Search icon size (optional) */
-.header__icon--search .svg-wrapper{
-  width: 2rem;
-  height: 2rem;
-}
-/* ✅ FORCE SHOW SEARCH ICON (Dawn) */
-.header__icons{
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* Dawn search wrapper is often details-modal.header__search */
-details-modal.header__search,
-.header__search{
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Actual clickable search icon button */
-.header__icons .header__icon--search,
-.header__icons .header__icon--search *{
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* If theme adds small-hide/medium-hide on search by mistake */
-.header__icons .header__icon--search.small-hide,
-.header__icons .header__icon--search.medium-hide{
-  display: flex !important;
-}
-
-/* Optional size */
-.header__icon--search .svg-wrapper{
-  width: 2rem;
-  height: 2rem;
-}
-
-/* ✅ Show Search icon properly */
-.header__icon--search{
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.header__icon--search .svg-wrapper{
-  width: 2rem;
-  height: 2rem;
-  display: flex !important;
-}
-
-.header__icon--search svg{
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
-}
 </style>
 
 {%- style -%}
@@ -155,40 +64,39 @@ details-modal.header__search,
     z-index: 10;
   }
 
-  /* Keep header overflow visible */
   .header-wrapper,
-  .header {
-    overflow: visible !important;
-  }
+  .header { overflow: visible !important; }
 
-  /* OPTIONAL: If you want logo a bit bigger (safe) */
+  /* Logo (safe scale) */
   .header__heading-logo-wrapper{
     margin: 0 auto;
-    transform: scale(1.08);
+    transform: scale(1.05);
     transform-origin: center;
     transition: transform .25s ease;
   }
 
-  /* Reduce logo scale on sticky scroll */
   .scrolled-past-header .header__heading-logo-wrapper{
     transform: scale(1.0);
   }
 
-  /* Hide logo when search modal open */
+  /* Hide logo when search modal open (optional) */
   .header--search-open .header__heading-logo-wrapper {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
-  /* WhatsApp icon styling (header icon hidden below anyway) */
-  .header__icon--whatsapp {
-    color: inherit;
-    transition: opacity 0.2s ease;
+  /* ✅ HIDE: Account + Cart (Desktop + Mobile) */
+  .header__icon--account,
+  .header__icon--cart,
+  #cart-icon-bubble{
+    display: none !important;
   }
-  .header__icon--whatsapp:hover { opacity: 0.7; }
 
-  /* Floating WhatsApp Button */
+  /* Hide header WhatsApp icon completely (floating button stays) */
+  .header__icon--whatsapp { display: none !important; }
+
+  /* ✅ Floating WhatsApp */
   .floating-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -232,57 +140,58 @@ details-modal.header__search,
     .floating-whatsapp__button .svg-wrapper { width: 28px; height: 28px; }
   }
 
-  /* Hide header WhatsApp icon completely */
-  .header__icon--whatsapp { display: none !important; }
-
-  /* =========================================================
-     ✅ REQUIRED: Hide Cart + Account icons (Desktop + Mobile)
-  ========================================================= */
-  .header__icon--account,
-  .header__icon--cart,
-  #cart-icon-bubble{
-    display: none !important;
+  /* ✅ Search icon styling (Custom SVG) */
+  .header__icon--search{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .header__icon--search .svg-wrapper{
+    width: 22px;
+    height: 22px;
+    display: flex;
+  }
+  .header__icon--search svg{
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
   }
 
-  /* =========================================================
-     ✅ REQUIRED LAYOUT
-     Desktop: Logo -> Menu -> Search
-     Mobile: Menu -> Logo -> Search
-  ========================================================= */
-
-  /* Desktop grid order */
+  /* ✅ Layout: Desktop = Logo | Menu | Search  */
   @media screen and (min-width: 990px){
     .header{
       display: grid !important;
-      grid-template-columns: auto 1fr auto !important; /* Logo | Menu | Search */
+      grid-template-columns: auto 1fr auto !important; /* Logo | Menu | Icons */
       align-items: center !important;
       gap: 18px;
     }
 
     .header__heading{ justify-self: start !important; }
 
-    /* Menu (inline/mega) sits in middle */
-    .header__inline-menu{ justify-self: start !important; }
-    .header__inline-menu .list-menu--inline{ justify-content: flex-start !important; }
-
-    /* Right side only search */
-    .header__icons{
-      justify-self: end !important;
+    .header__inline-menu{
+      justify-self: center !important;
+    }
+    .header__inline-menu .list-menu--inline{
+      justify-content: center !important;
     }
 
-    /* ensure search visible */
-    .header__icons .header__search{ display: block !important; }
+    .header__icons{
+      justify-self: end !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 14px;
+    }
 
-    /* OPTIONAL: hide localization in header area */
-    .header__icons--localization,
+    /* Hide localization dropdowns (optional) */
     .desktop-localization-wrapper{ display: none !important; }
   }
 
-  /* Mobile grid order */
+  /* ✅ Layout: Mobile = Menu | Logo | Search  */
   @media screen and (max-width: 989px){
     .header{
       display: grid !important;
-      grid-template-columns: auto 1fr auto !important; /* Menu | Logo | Search */
+      grid-template-columns: auto 1fr auto !important; /* Menu | Logo | Icons */
       align-items: center !important;
       gap: 10px;
     }
@@ -294,34 +203,18 @@ details-modal.header__search,
       text-align: center !important;
     }
 
-    .header__icons{ justify-self: end !important; }
+    .header__icons{
+      justify-self: end !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px;
+    }
 
-    .header__icons .header__search{ display: block !important; }
-
-    .header__icons--localization,
     .desktop-localization-wrapper{ display: none !important; }
   }
-
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchModal = document.querySelector('.header__search details');
-    const headerElement = document.querySelector('.header');
-
-    if (searchModal && headerElement) {
-      searchModal.addEventListener('toggle', function() {
-        if (searchModal.open) {
-          headerElement.classList.add('header--search-open');
-        } else {
-          headerElement.classList.remove('header--search-open');
-        }
-      });
-    }
-  });
-</script>
 
 {%- liquid
   for block in section.blocks
@@ -333,7 +226,6 @@ details-modal.header__search,
 
 {% liquid
   assign header_tag = 'div'
-
   if section.settings.sticky_header_type != 'none'
     assign header_tag = 'sticky-header'
   endif
@@ -359,16 +251,13 @@ details-modal.header__search,
   -%}
 
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
-    {%- liquid
-      if section.settings.menu != blank
-        render 'header-drawer'
-      endif
-    -%}
+
+    {%- if section.settings.menu != blank -%}
+      {%- render 'header-drawer' -%}
+    {%- endif -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
-      {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
-      {%- endif -%}
+      {%- if request.page_type == 'index' -%}<h1 class="header__heading">{%- endif -%}
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
@@ -393,9 +282,7 @@ details-modal.header__search,
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
       </a>
-      {%- if request.page_type == 'index' -%}
-        </h1>
-      {%- endif -%}
+      {%- if request.page_type == 'index' -%}</h1>{%- endif -%}
     {%- endif -%}
 
     {%- liquid
@@ -406,12 +293,10 @@ details-modal.header__search,
           render 'header-mega-menu'
         endif
       endif
-    %}
+    -%}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
-      {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
-      {%- endif -%}
+      {%- if request.page_type == 'index' -%}<h1 class="header__heading">{%- endif -%}
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
@@ -436,9 +321,7 @@ details-modal.header__search,
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
       </a>
-      {%- if request.page_type == 'index' -%}
-        </h1>
-      {%- endif -%}
+      {%- if request.page_type == 'index' -%}</h1>{%- endif -%}
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
@@ -452,7 +335,7 @@ details-modal.header__search,
               </div>
             {%- endform -%}
           </localization-form>
-        {% endif %}
+        {%- endif -%}
 
         {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
@@ -466,22 +349,15 @@ details-modal.header__search,
         {%- endif -%}
       </div>
 
-      {%- comment -%}
-        ✅ Search icon should show (Desktop + Mobile)
-      {%- endcomment -%}
-  <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset" aria-label="Search">
-  <span class="svg-wrapper">
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-      <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path>
-    </svg>
-  </span>
-  <span class="visually-hidden">Search</span>
-</a>
-
-      {%- comment -%}
-        Account + Cart code kept for theme compatibility
-        but will be hidden by CSS (display:none !important)
-      {%- endcomment -%}
+      {%- comment -%} ✅ CUSTOM SEARCH ICON (RIGHT SIDE) {%- endcomment -%}
+      <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset" aria-label="Search">
+        <span class="svg-wrapper">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+            <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path>
+          </svg>
+        </span>
+        <span class="visually-hidden">Search</span>
+      </a>
 
       {%- if shop.customer_accounts_enabled -%}
         <a
@@ -504,8 +380,7 @@ details-modal.header__search,
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
+          {%- when '@app' -%}{% render block %}
         {%- endcase -%}
       {%- endfor -%}
 
@@ -578,7 +453,6 @@ details-modal.header__search,
 
       this.currentScrollTop = 0;
       this.preventReveal = false;
-      this.predictiveSearch = this.querySelector('predictive-search');
 
       this.onScrollHandler = this.onScroll.bind(this);
       this.hideHeaderOnScrollUp = () => (this.preventReveal = true);
@@ -587,7 +461,6 @@ details-modal.header__search,
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
-      this.setupSearchToggle();
     }
 
     setHeaderHeight() {
@@ -609,21 +482,14 @@ details-modal.header__search,
 
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
-        if (this.preventHide) return;
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
-        if (!this.preventReveal) {
-          requestAnimationFrame(this.reveal.bind(this));
-        } else {
-          window.clearTimeout(this.isScrolling);
-          this.isScrolling = setTimeout(() => { this.preventReveal = false; }, 66);
-          requestAnimationFrame(this.hide.bind(this));
-        }
+        if (!this.preventReveal) requestAnimationFrame(this.reveal.bind(this));
+        else requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop <= this.headerBounds.top) {
         this.header.classList.remove('scrolled-past-header');
         requestAnimationFrame(this.reset.bind(this));
@@ -635,8 +501,6 @@ details-modal.header__search,
     hide() {
       if (this.headerIsAlwaysSticky) return;
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
-      this.closeMenuDisclosure();
-      this.closeSearchModal();
     }
 
     reveal() {
@@ -648,27 +512,6 @@ details-modal.header__search,
     reset() {
       if (this.headerIsAlwaysSticky) return;
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
-    }
-
-    closeMenuDisclosure() {
-      this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
-      this.disclosures.forEach((disclosure) => disclosure.close());
-    }
-
-    closeSearchModal() {
-      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
-    }
-
-    setupSearchToggle() {
-      const searchModal = this.header.querySelector('.header__search details');
-      const headerElement = this.header.querySelector('.header');
-      if (searchModal && headerElement) {
-        searchModal.addEventListener('toggle', () => {
-          if (searchModal.open) headerElement.classList.add('header--search-open');
-          else headerElement.classList.remove('header--search-open');
-        });
-      }
     }
   }
 
