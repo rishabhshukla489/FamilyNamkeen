@@ -89,6 +89,39 @@
   width: 2rem;
   height: 2rem;
 }
+/* ✅ FORCE SHOW SEARCH ICON (Dawn) */
+.header__icons{
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Dawn search wrapper is often details-modal.header__search */
+details-modal.header__search,
+.header__search{
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Actual clickable search icon button */
+.header__icons .header__icon--search,
+.header__icons .header__icon--search *{
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* If theme adds small-hide/medium-hide on search by mistake */
+.header__icons .header__icon--search.small-hide,
+.header__icons .header__icon--search.medium-hide{
+  display: flex !important;
+}
+
+/* Optional size */
+.header__icon--search .svg-wrapper{
+  width: 2rem;
+  height: 2rem;
+}
 </style>
 
 {%- style -%}
