@@ -74,6 +74,21 @@
       padding-top: 0.5rem;
     }
   }
+  /* ✅ FORCE SHOW SEARCH ICON */
+.header__icon--search,
+.header__search,
+.header__search details,
+.header__search summary{
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Search icon size (optional) */
+.header__icon--search .svg-wrapper{
+  width: 2rem;
+  height: 2rem;
+}
 </style>
 
 {%- style -%}
