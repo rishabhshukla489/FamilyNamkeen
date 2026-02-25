@@ -450,7 +450,14 @@ details-modal.header__search,
       {%- comment -%}
         ✅ Search icon should show (Desktop + Mobile)
       {%- endcomment -%}
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+  <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset" aria-label="Search">
+  <span class="svg-wrapper">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path>
+    </svg>
+  </span>
+  <span class="visually-hidden">Search</span>
+</a>
 
       {%- comment -%}
         Account + Cart code kept for theme compatibility
