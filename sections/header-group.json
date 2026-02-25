@@ -15,7 +15,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "+917525046504 / +917525045271",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -23,12 +23,10 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".header__icon .icon {height: 2rem; width: 2rem; fill: none; vertical-align: middle; display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-left",
-        "mobile_logo_position": "left",
+        "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "none",
@@ -42,10 +40,44 @@
         "padding_top": 4,
         "padding_bottom": 4
       }
+    },
+    "announcement_bar_bVRpKQ": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_zqzQaE": {
+          "type": "announcement",
+          "settings": {
+            "text": "+917525045271",
+            "link": ""
+          }
+        },
+        "announcement_gEe7V9": {
+          "type": "announcement",
+          "settings": {
+            "text": "+917525046504 /",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_zqzQaE",
+        "announcement_gEe7V9"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
     "custom_liquid_bkK49q",
-    "header"
+    "header",
+    "announcement_bar_bVRpKQ"
   ]
 }
