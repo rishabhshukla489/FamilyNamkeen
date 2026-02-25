@@ -17,15 +17,15 @@
         "announcement_zqzQaE": {
           "type": "announcement",
           "settings": {
-            "text": "+917525045271",
-            "link": ""
+            "text": "Call Us:  +91 752 504 5271",
+            "link": "tel:+917525045271"
           }
         },
         "announcement_gEe7V9": {
           "type": "announcement",
           "settings": {
-            "text": "+917525046504 /",
-            "link": ""
+            "text": "Call Us: +91 752 504 5271",
+            "link": "tel:+917525045271"
           }
         }
       },
@@ -38,7 +38,7 @@
         "auto_rotate": false,
         "change_slides_speed": 5,
         "color_scheme": "scheme-4",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false
