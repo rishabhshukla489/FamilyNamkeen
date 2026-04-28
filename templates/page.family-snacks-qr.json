@@ -47,99 +47,14 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_bPU3nV": {
-      "type": "rich-text",
-      "blocks": {
-        "caption_XdzPQG": {
-          "type": "caption",
-          "settings": {
-            "caption": "Our Range",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_AaDmAV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find your krrrunch.",
-            "heading_size": "h1"
-          }
-        },
-        "text_HEfTh3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Three rusks. One promise — the perfect crunch in every pack.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "caption_XdzPQG",
-        "heading_AaDmAV",
-        "text_HEfTh3"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+    "custom_liquid_QERPrR": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "custom_liquid": "<div class=\"science-section\">\n\n  <h2 class=\"science-title\">\n    The science behind the krrrunch.\n  </h2>\n\n  <div class=\"science-grid\">\n\n    <div class=\"science-card\">\n      <span class=\"num\">01</span>\n      <h4>Crunch Science</h4>\n      <p>Continuous R&D for the ideal crunch profile in every batch.</p>\n    </div>\n\n    <div class=\"science-card\">\n      <span class=\"num\">02</span>\n      <h4>Batch Consistency</h4>\n      <p>Precision baking, moisture control and quality checks every time.</p>\n    </div>\n\n    <div class=\"science-card\">\n      <span class=\"num\">03</span>\n      <h4>Crunch-Lock Packaging</h4>\n      <p>Sealed to protect the krrrunch from the bakery to your bite.</p>\n    </div>\n\n    <div class=\"science-card\">\n      <span class=\"num\">04</span>\n      <h4>Hygiene-First</h4>\n      <p>Baked in a controlled, audited manufacturing environment.</p>\n    </div>\n\n    <div class=\"science-card\">\n      <span class=\"num\">05</span>\n      <h4>Made for Chai Time</h4>\n      <p>Engineered for the perfect dunk — strong to hold, light to love.</p>\n    </div>\n\n  </div>\n\n</div>\n\n<style>\n/* SECTION */\n.science-section {\n  background: #d8cbb6;\n  padding: 90px 5%;\n  text-align: center;\n}\n\n/* TITLE */\n.science-title {\n  font-size: 48px;\n  font-weight: 700;\n  color: #2c1b12;\n  margin-bottom: 50px;\n}\n\n/* GRID */\n.science-grid {\n  display: grid;\n  grid-template-columns: repeat(5, 1fr);\n  gap: 25px;\n}\n\n/* CARD */\n.science-card {\n  background: #eeeeee;\n  border-radius: 18px;\n  padding: 25px 20px;\n  text-align: left;\n  transition: 0.3s ease;\n}\n\n.science-card:hover {\n  transform: translateY(-5px);\n}\n\n/* NUMBER */\n.num {\n  display: block;\n  font-size: 20px;\n  font-weight: 700;\n  color: #c0392b;\n  margin-bottom: 10px;\n}\n\n/* TITLE */\n.science-card h4 {\n  font-size: 16px;\n  font-weight: 600;\n  color: #2c1b12;\n  margin-bottom: 10px;\n}\n\n/* DESC */\n.science-card p {\n  font-size: 14px;\n  color: #6b5b4d;\n  line-height: 1.5;\n}\n\n/* RESPONSIVE */\n@media(max-width: 1024px) {\n  .science-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media(max-width: 600px) {\n  .science-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .science-title {\n    font-size: 32px;\n  }\n}\n</style>",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multicolumn_kfbm9H": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_nUmXXT": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_8EzfWC": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RKWTmf": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_nUmXXT",
-        "column_8EzfWC",
-        "column_RKWTmf"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -148,7 +63,6 @@
     "custom_liquid_LR3hE7",
     "custom_liquid_7EAdV7",
     "custom_liquid_hqkcJz",
-    "rich_text_bPU3nV",
-    "multicolumn_kfbm9H"
+    "custom_liquid_QERPrR"
   ]
 }
