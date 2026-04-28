@@ -26,10 +26,118 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "custom_liquid_7EAdV7": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"range-section\">\n\n  <div class=\"range-header\">\n    <p class=\"sub\">OUR RANGE</p>\n    <h2>Find your krrrunch.</h2>\n    <p class=\"subtitle\">\n      Three rusks. One promise — the perfect crunch in every pack.\n    </p>\n  </div>\n\n  <div class=\"range-grid\">\n\n    <!-- CARD 1 -->\n    <div class=\"range-card\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0743/8522/8003/files/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png?v=1777363816\">\n      <p class=\"tag\">CLASSIC</p>\n      <h3>Classic Rusk</h3>\n      <p class=\"desc\">Golden crunch in every slice — Rusk makes tea-time twice as nice!</p>\n      <a href=\"#\">LEARN MORE →</a>\n    </div>\n\n    <!-- CARD 2 -->\n    <div class=\"range-card\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0743/8522/8003/files/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png?v=1777363816\">\n      <p class=\"tag\">MILK</p>\n      <h3>Milk Rusk</h3>\n      <p class=\"desc\">Milky richness meets golden crunch — your perfect tea-time treat.</p>\n      <a href=\"#\">LEARN MORE →</a>\n    </div>\n\n    <!-- CARD 3 -->\n    <div class=\"range-card\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0743/8522/8003/files/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png?v=1777363816\">\n      <p class=\"tag\">ELAICHI</p>\n      <h3>Elaichi Rusk</h3>\n      <p class=\"desc\">Golden crunch, delicate sweetness — every tea-time made special.</p>\n      <a href=\"#\">LEARN MORE →</a>\n    </div>\n\n  </div>\n</div>\n\n<style>\n/* SECTION BACKGROUND */\n.range-section {\n  background: #d8cbb6;\n  padding: 80px 5%;\n  text-align: center;\n}\n\n/* HEADER */\n.range-header .sub {\n  color: #c0392b;\n  font-size: 12px;\n  letter-spacing: 2px;\n  margin-bottom: 10px;\n}\n\n.range-header h2 {\n  font-size: 48px;\n  font-weight: 700;\n  color: #2c1b12;\n  margin-bottom: 10px;\n}\n\n.range-header .subtitle {\n  color: #5c4a3d;\n  font-size: 16px;\n}\n\n/* GRID */\n.range-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 30px;\n  margin-top: 50px;\n}\n\n/* CARD */\n.range-card {\n  background: #f2f2f2;\n  padding: 30px 25px;\n  border-radius: 20px;\n  text-align: center;\n  transition: 0.3s;\n}\n\n.range-card:hover {\n  transform: translateY(-5px);\n}\n\n/* IMAGE */\n.range-card img {\n  width: 100%;\n  max-width: 250px;\n  margin-bottom: 20px;\n}\n\n/* TAG */\n.range-card .tag {\n  color: #c0392b;\n  font-size: 12px;\n  letter-spacing: 2px;\n  margin-bottom: 8px;\n}\n\n/* TITLE */\n.range-card h3 {\n  font-size: 22px;\n  color: #2c1b12;\n  margin-bottom: 10px;\n}\n\n/* DESC */\n.range-card .desc {\n  font-size: 14px;\n  color: #6b5b4d;\n  margin-bottom: 15px;\n}\n\n/* LINK */\n.range-card a {\n  color: #c0392b;\n  text-decoration: none;\n  font-size: 13px;\n  font-weight: 600;\n}\n\n/* MOBILE */\n@media(max-width: 768px) {\n  .range-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .range-header h2 {\n    font-size: 32px;\n  }\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_bPU3nV": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_XdzPQG": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Range",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_AaDmAV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find your krrrunch.",
+            "heading_size": "h1"
+          }
+        },
+        "text_HEfTh3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Three rusks. One promise — the perfect crunch in every pack.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_XdzPQG",
+        "heading_AaDmAV",
+        "text_HEfTh3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_kfbm9H": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nUmXXT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8EzfWC": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RKWTmf": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nUmXXT",
+        "column_8EzfWC",
+        "column_RKWTmf"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "custom_liquid_LR3hE7"
+    "custom_liquid_LR3hE7",
+    "custom_liquid_7EAdV7",
+    "rich_text_bPU3nV",
+    "multicolumn_kfbm9H"
   ]
 }
