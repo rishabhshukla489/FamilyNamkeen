@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 72
@@ -47,7 +48,9 @@
         "text_wWR398",
         "button_nr9HMM"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".image-with-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0743/8522/8003/files/Untitled_design_3.png?v=1777359197\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Untitled_design_4_bbffb509-0b42-463c-8492-ec5323896460.png",
